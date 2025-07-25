@@ -57,10 +57,10 @@ Check out some of my recent research projects and publications:
 
 ## 📫 How to reach me
 
-- 🌐 [Personal Website (Coming Soon)]()
-- 📧 thelee.ai@gmail.com  
-- 🔗 [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN/)  
-- 🧑‍🔬 [Google Scholar](https://scholar.google.com/citations?user=YOUR_ID)
+
+- 📧 vanthe.le96@gmail.com  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/thevanle//)  
+- 🧑‍🔬 [Google Scholar](https://scholar.google.com/citations?user=k8nLINYAAAAJ&hl=vi)
 
 ---
 
