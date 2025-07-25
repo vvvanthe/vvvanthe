@@ -533,7 +533,28 @@ img {
 }
 
 .skills__python {
-  width: 60%;
+  width: 95%;
+}
+
+.skills__c {
+  width: 75%;
+}
+
+.skills__cs {
+  width: 70%;
+}
+
+.skills__matlab {
+  width: 75%;
+}
+
+
+.skills__frai {
+  width: 95%;
+}
+
+.skills__llm {
+  width: 90%;
 }
 
 .skills__tab {
@@ -1376,3 +1397,4 @@ img {
   background-color: #bae6fd;
   color: #0c4a6e;
 }
+
