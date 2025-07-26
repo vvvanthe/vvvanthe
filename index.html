@@ -757,6 +757,7 @@
                               <div class="skills__badges">
                                 <span class="skill-badge">Node.js</span>
                                 <span class="skill-badge">FastAPI</span>
+                                <span class="skill-badge">Celery</span>
                               </div>
                             </div>
                             <div class="skills__bar">
@@ -1269,34 +1270,34 @@
                     </div>
                 </div>
 
-                <form action="" class="contact__form grid">
+                <form action="" class="contact__form grid" id="contact-form" >
                     <div class="contact__inputs grid">
                         <div class="contact__content">
                             <label for="" class="contact__label">Name</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" class="contact__input" id="name">
                         </div>
 
                         <div class="contact__content">
                             <label for="" class="contact__label">E-mail</label>
-                            <input type="email" class="contact__input">
+                            <input type="email" class="contact__input" id="email">
                         </div>
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Subject</label>
-                        <input type="text" class="contact__input">
+                        <input type="text" class="contact__input" id="subject">
                     </div>
 
                     <div class="contact__content">
                         <label for="" class="contact__label">Description</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="" id="message" cols="0" rows="7" class="contact__input"></textarea>
                     </div>
 
                     <div>
-                        <a href="#" class="button button--flex">
+                        <button type="submit" class="button button--flex contact__button">
                             Send message
                             <i class="uil uil-message button__icon"></i>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -1319,7 +1320,7 @@
                         <a href="#services" class="footer__link">Services</a>
                     </li>
                     <li>
-                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                        <a href="#cvproject" class="footer__link">Projects</a>
                     </li>
                     <li>
                         <a href="#contact" class="footer__link">Contact</a>
@@ -1356,3 +1357,4 @@
 </body>
 
 </html>
+

@@ -1398,3 +1398,27 @@ img {
   color: #0c4a6e;
 }
 
+.contact__button {
+  all: unset; /* Reset everything */
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.contact__button .button__icon {
+  font-size: 1.2rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}

@@ -210,3 +210,34 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("JS loaded and DOM ready");
+
+  const contactForm = document.getElementById('contact-form');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !subject || !message) {
+        alert("Please fill out all fields before sending.");
+        return;
+      }
+
+      const mailtoLink = `mailto:vanthe.le96@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\n${message}`
+      )}`;
+
+      console.log("Opening mailto:", mailtoLink);
+      window.location.href = mailtoLink;
+    });
+  } else {
+    console.warn("contact-form not found in DOM.");
+  }
+});
