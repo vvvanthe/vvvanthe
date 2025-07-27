@@ -241,3 +241,72 @@ document.addEventListener("DOMContentLoaded", function () {
     console.warn("contact-form not found in DOM.");
   }
 });
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const modal = document.getElementById('modal');
+ 
+
+//   document.addEventListener('click', function (e) {
+//     if (e.target.classList.contains('open-modal')) {
+//       modal.classList.remove('hidden');
+//     }
+
+//     if (e.target.classList.contains('close-modal')) {
+//       modal.classList.add('hidden');
+//     }
+
+//     if (e.target === modal) {
+//       modal.classList.add('hidden');
+//     }
+//   });
+// });
+
+/*==================== PROJECT MODAL ====================*/
+
+
+const pjModalViews = document.querySelectorAll(".modal"),
+pjModalBtns = document.querySelectorAll(".pj__button"),
+pjModalCloses = document.querySelectorAll(".close-modal");
+
+let pjModal = function (pjModalClick) {
+  pjModalViews[pjModalClick].classList.remove("hidden");
+};
+
+pjModalBtns.forEach((pjModalBtn, i) => {
+  pjModalBtn.addEventListener("click", () => {
+    pjModal(i);
+  });
+});
+
+pjModalCloses.forEach((pjModalClose) => {
+  pjModalClose.addEventListener("click", () => {
+    pjModalViews.forEach((pjModalView) => {
+      pjModalView.classList.add("hidden");
+    });
+  });
+});
+
+
+/*==================== SERVICES MODAL ====================*/
+// const modalViews = document.querySelectorAll(".services__modal"),
+//   modalBtns = document.querySelectorAll(".services__button"),
+//   modalCloses = document.querySelectorAll(".services__modal-close");
+
+// let modal = function (modalClick) {
+//   modalViews[modalClick].classList.add("active-modal");
+// };
+
+// modalBtns.forEach((modalBtn, i) => {
+//   modalBtn.addEventListener("click", () => {
+//     modal(i);
+//   });
+// });
+
+// modalCloses.forEach((modalClose) => {
+//   modalClose.addEventListener("click", () => {
+//     modalViews.forEach((modalView) => {
+//       modalView.classList.remove("active-modal");
+//     });
+//   });
+// });

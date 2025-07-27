@@ -219,7 +219,7 @@
                     <div class="services__modal">
                         <div class="services__modal-content">
                             <h4 class="services__modal-title">🎓 PhD in Intelligent Mechatronics Engineering<br></h4>
-                            <i class="uil uil-times services__modal-close"></i>
+                            <i class="uil uil-times services__modal-close "></i>
         
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
@@ -1152,12 +1152,18 @@
                             <strong>Tech stack:</strong> Svelte, TailwindCSS (frontend); FastAPI (backend)
                             
                       <h3 class="portfolio__title"></h3>
-                      <a href="https://docs.google.com/presentation/d/1Vtcj3U6o0KIVwOLa833ukLaN0kFxHJF7/edit?usp=sharing&ouid=103931757335348659010&rtpof=true&sd=true" 
-                        class="button button--flex button--small portfolio__button" 
+                      <!-- <a href="https://docs.google.com/presentation/d/1Vtcj3U6o0KIVwOLa833ukLaN0kFxHJF7/edit?usp=sharing&ouid=103931757335348659010&rtpof=true&sd=true" 
+                        class="button button--flex button--small portfolio__button pjbtn_modal" 
                         target="_blank">
                         View Slides
                         <i class="uil uil-external-link-alt button__icon"></i>
-                        </a>
+                        </a> -->
+
+                        <button type="" class="button button--flex pj__button">
+                            More Details
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+
                             <a href="https://youtu.be/1ggh-2Fd3Hc" class="button button--flex button--small portfolio__button" target="_blank">
                         Demo
                         <i class="uil uil-arrow-right button__icon"></i>
@@ -1169,19 +1175,40 @@
             <!--==================== PORTFOLIO 2 ====================-->
         
             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio3.PNG" alt="" class="portfolio__img">
+                <img src="./packages/images/LLM/AI_interview.png" alt="" class="portfolio__img">
 
                 <div class="portfolio_">
-                    <h3 class="portfolio__title">E-Commerce website</h3>
-                    <p class="portfolio__description">Above Amazon clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
+                    <h3 class="portfolio__title">AI Interview 22: Transforming the Future of Recruitment   </h3>
+                    <p class="portfolio__description">
+                        <ul class="portfolio__description-list">
+                            <li>📄 Automates CV screening and question generation based on job descriptions (JDs).</li>
+                            <li>🗣️ Integrates large language models (LLMs) to conducts natural voice interviews with dynamic Q&A.</li>
+                            <li>📊 Provides unbiased, consistent evaluations and candidate ranking.</li>
+                            <li>🗃️ Stores candidate data, transcriptions, and reports in an integrated system.</li>
+                          </ul>
+                      </p>
+                      <br>
+                            <strong>Tech stack:</strong> Svelte, TailwindCSS (frontend); FastAPI (backend)
+                            
+                      <h3 class="portfolio__title"></h3>
+
+                        <button type="" class="button button--flex pj__button">
+                            More Details
+                            <i class="uil uil-message button__icon"></i>
+                        </button>
+
+                            <a href="https://youtu.be/1ggh-2Fd3Hc" class="button button--flex button--small portfolio__button" target="_blank">
                         Demo
                         <i class="uil uil-arrow-right button__icon"></i>
                     </a>
+                    <h3 class="portfolio__title"></h3>
                 </div>
             </div>
-
+              
+        
+              
+              <!-- Modal -->
+              
             <!--==================== PORTFOLIO 3 ====================-->
         
             <div class="portfolio__content grid swiper-slide">
@@ -1201,19 +1228,7 @@
 
              <!--==================== PORTFOLIO 4 ====================-->
         
-             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio2.png" alt="" class="portfolio__img">
 
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">Brand Design</h3>
-                    <p class="portfolio__description">Tesla Clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
-                </div>
-            </div>
                 </div>
 
             
@@ -1311,7 +1326,7 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
-                    <h1 class="footer__title">The Van LE</h1>
+                    <h1 class="footer__title">Van The LE</h1>
                     <span class="footer__subtitle">AI Researcher</span>
                 </div>
 
@@ -1347,8 +1362,104 @@
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
-    
 
+
+     <!--==================== Project model ====================-->
+
+
+
+
+     <!--########========== LLM Project===========####-->
+
+     <!--########========== LLM 1===========####-->
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <!-- <span class="close-modal">&times;</span> -->
+          <i class="uil uil-times close-modal"></i>
+          <h2>AI Interview Overview</h2>
+          <p class="portfolio__modal-description">
+            A smart interview solution that leverages LLMs, voice AI, and deep learning to automate, evaluate, and streamline candidate screening and assessment.
+          </p>
+
+          <h4>📌 System Overview Diagram</h4>
+            <div class="portfolio__modal-image">
+            <img src="./packages/images/LLM/1/diagram.jpg" alt="AI Interview System Diagram">
+            <!-- <p class="portfolio__modal-caption">Diagram of interview flow.</p> -->
+            </div>
+
+
+          <h4>🧩 Background</h4>
+          <p>
+            Traditional recruitment requires significant human effort in CV screening and conducting interviews. It is time-consuming, subjective, and difficult to scale. This project proposes a fully automated AI interview platform that simulates HR interactions using advanced language and speech models.
+          </p>
+      
+          <h4>🚀 Project Goals</h4>
+          <ul class="portfolio__modal-list">
+            <li>Replace initial human interviews with a fully autonomous voice-based system.</li>
+            <li>Provide consistent and unbiased candidate evaluation.</li>
+            <li>Enable one-click integration for HR teams and recruiters.</li>
+          </ul>
+      
+          <h4>🛠️ Key Features</h4>
+          <ul class="portfolio__modal-list">
+            <li>📄 CV parsing and JD-based question generation.</li>
+            <li>🗣️ Natural two-way interview using Google TTS/STT APIs and LLMs.</li>
+            <li>🎯 Intelligent question branching based on candidate answers.</li>
+            <li>📊 Automated scoring and evaluation reports.</li>
+            <li>🧠 Anti-cheating logic with randomized access and dynamic content.</li>
+            <li>🗃️ Candidate management dashboard with full logs and transcripts.</li>
+          </ul>
+      
+          <h4>🔬 System Architecture</h4>
+          <p>
+            The platform includes a frontend interview interface (Svelte), a backend logic and scoring engine (FastAPI + Python), speech services (Google APIs), and a backend database for storing candidate sessions and evaluations. LLMs (e.g., GPT or Mistral) are used for both question generation and answer analysis.
+          </p>
+      
+          <h4>🧪 Technologies Used</h4>
+          <ul class="portfolio__modal-list">
+            <li><strong>Frontend:</strong> Svelte, TailwindCSS</li>
+            <li><strong>Backend:</strong> FastAPI, Python, PostgreSQL</li>
+            <li><strong>AI Modules:</strong> OpenAI / Mistral APIs, Sentence Transformers</li>
+            <li><strong>Speech:</strong> Google TTS, Google STT</li>
+          </ul>
+      
+          <h4>📊 Expected Impact</h4>
+          <ul class="portfolio__modal-list">
+            <li>Reduce HR workload by 70% for first-round interviews.</li>
+            <li>Improve candidate fairness by eliminating bias in early screening.</li>
+            <li>Increase scalability for startups and enterprises with large applicant pools.</li>
+          </ul>
+
+          <h4>📊 Evaluation Result Sample</h4>
+          <div class="portfolio__modal-image">
+          <img src="./packages/images/LLM/1/2.png" alt="AI Interview System Diagram">
+          <!-- <p class="portfolio__modal-caption">Evaluation Result Sample.</p> -->
+          </div>
+
+            
+          <h4>📂 Proposal Slides</h4>
+          <a href="https://docs.google.com/presentation/d/1Vtcj3U6o0KIVwOLa833ukLaN0kFxHJF7/edit?usp=sharing&ouid=103931757335348659010&rtpof=true&sd=true" 
+             target="_blank" 
+             class="button button--flex button--small portfolio__button">
+            View Proposal
+            <i class="uil uil-file-download button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+     <!--########========== LLM 2===========####-->
+
+
+      <div id="modal" class="modal hidden">
+        <div class="modal-content">
+          <!-- <span class="close-modal">&times;</span> -->
+          <i class="uil uil-times close-modal"></i>
+          <h2>AI Interview Overview 22 </h2>
+          <p>This project automates interviews using LLMs 1...</p>
+        </div>
+      </div>
+   
     <!--==================== SWIPER JS ====================-->
     <script src="./packages/js/swiper-bundle.min.js"></script>
 

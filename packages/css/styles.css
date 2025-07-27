@@ -1266,7 +1266,7 @@ img {
     }
 
     .services__modal-content {
-      width: 450px;
+      width: 600px;
     }
     .portfolio__img {
       width: 320px;
@@ -1421,4 +1421,124 @@ img {
   font-size: 1.2rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
+}
+
+
+.pj__button {
+  all: unset; /* Reset everything */
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--first-color);
+  color: #fff;
+  /* padding: 1rem; */
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.75rem 1rem;
+}
+
+.pj__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.pj__button.button__icon {
+  font-size: 1.2rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.pj__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999!important;
+  
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 90%;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.portfolio__title .open-modal {
+  z-index: 1001;
+  position: relative;
+  pointer-events: auto;
+}
+
+.modal-content h4 {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #007acc;
+}
+
+.portfolio__modal-image {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.portfolio__modal-image img {
+  max-width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__modal-caption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.portfolio__modal-video {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.portfolio__modal-video iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.image-row figure {
+  width: 48%;
+  text-align: center;
+}
+
+.image-row figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.5rem;
 }
