@@ -1423,6 +1423,15 @@ img {
   transition: 0.3s;
 }
 
+.contact__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
+.home__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
+
+
 
 .pj__button {
   all: unset; /* Reset everything */
@@ -1546,7 +1555,7 @@ img {
 
 body.dark-theme .modal-content {
   background: var(--container-color);
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 body.dark-theme .close-modal {

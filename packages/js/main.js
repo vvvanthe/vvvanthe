@@ -69,27 +69,67 @@ tabs.forEach((tab) => {
 });
 
 /*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll(".services__modal"),
-  modalBtns = document.querySelectorAll(".services__button"),
-  modalCloses = document.querySelectorAll(".services__modal-close");
+// const modalViews = document.querySelectorAll(".services__modal"),
+//   modalBtns = document.querySelectorAll(".services__button"),
+//   modalCloses = document.querySelectorAll(".services__modal-close");
 
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add("active-modal");
-};
+// let modal = function (modalClick) {
+//   modalViews[modalClick].classList.add("active-modal");
+// };
 
-modalBtns.forEach((modalBtn, i) => {
-  modalBtn.addEventListener("click", () => {
-    modal(i);
+// modalBtns.forEach((modalBtn, i) => {
+//   modalBtn.addEventListener("click", () => {
+//     modal(i);
+//   });
+// });
+
+// modalCloses.forEach((modalClose) => {
+//   modalClose.addEventListener("click", () => {
+//     modalViews.forEach((modalView) => {
+//       modalView.classList.remove("active-modal");
+//     });
+//   });
+// });
+
+
+const serviceModalButtons = document.querySelectorAll(".services__button");
+const serviceModalCloseButtons = document.querySelectorAll(".services__modal-close");
+
+// Open modal based on data-service-modal attribute
+serviceModalButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modalId = btn.getAttribute("data-service-modal");
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.add("active-modal");
+    } else {
+      console.warn(`Service modal with ID "${modalId}" not found.`);
+    }
   });
 });
 
-modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener("click", () => {
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove("active-modal");
-    });
+// Close modal by closest parent
+serviceModalCloseButtons.forEach((closeBtn) => {
+  closeBtn.addEventListener("click", () => {
+    const modal = closeBtn.closest(".services__modal");
+    if (modal) {
+      modal.classList.remove("active-modal");
+    }
   });
 });
+
+// Optional: click outside modal-content to close
+document.addEventListener("click", (e) => {
+  const openModals = document.querySelectorAll(".services__modal.active-modal");
+  openModals.forEach((modal) => {
+    if (e.target === modal) {
+      modal.classList.remove("active-modal");
+    }
+  });
+});
+
+
+
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {
@@ -135,22 +175,39 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
 
+// function scrollActive() {
+//   const scrollY = window.pageYOffset;
+
+//   sections.forEach((current) => {
+//     const sectionHeight = current.offsetHeight;
+//     const sectionTop = current.offsetTop - 50;
+//     sectionId = current.getAttribute("id");
+
+//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+//       document
+//         .querySelector(".nav__menu a[href*=" + sectionId + "]")
+//         .classList.add("active-link");
+//     } else {
+//       document
+//         .querySelector(".nav__menu a[href*=" + sectionId + "]")
+//         .classList.remove("active-link");
+//     }
+//   });
+// }
+
 function scrollActive() {
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute("id");
+    const sectionId = current.getAttribute("id");
 
+    const link = document.querySelector(".nav__menu a[href*=" + sectionId + "]");
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
+      if (link) link.classList.add("active-link");
     } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+      if (link) link.classList.remove("active-link");
     }
   });
 }
@@ -265,25 +322,47 @@ document.addEventListener("DOMContentLoaded", function () {
 /*==================== PROJECT MODAL ====================*/
 
 
-const pjModalViews = document.querySelectorAll(".modal"),
-pjModalBtns = document.querySelectorAll(".pj__button"),
-pjModalCloses = document.querySelectorAll(".close-modal");
+// const pjModalViews = document.querySelectorAll(".modal"),
+// pjModalBtns = document.querySelectorAll(".pj__button"),
+// pjModalCloses = document.querySelectorAll(".close-modal");
 
-let pjModal = function (pjModalClick) {
-  pjModalViews[pjModalClick].classList.remove("hidden");
-};
+// let pjModal = function (pjModalClick) {
+//   pjModalViews[pjModalClick].classList.remove("hidden");
+// };
 
-pjModalBtns.forEach((pjModalBtn, i) => {
-  pjModalBtn.addEventListener("click", () => {
-    pjModal(i);
+// pjModalBtns.forEach((pjModalBtn, i) => {
+//   pjModalBtn.addEventListener("click", () => {
+//     pjModal(i);
+//   });
+// });
+
+// pjModalCloses.forEach((pjModalClose) => {
+//   pjModalClose.addEventListener("click", () => {
+//     pjModalViews.forEach((pjModalView) => {
+//       pjModalView.classList.add("hidden");
+//     });
+//   });
+// });
+
+
+const pjModalBtns = document.querySelectorAll(".pj__button");
+const pjModalCloses = document.querySelectorAll(".close-modal");
+
+pjModalBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const modalId = btn.getAttribute("data-modal");
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove("hidden");
+    } else {
+      console.warn(`Modal with ID "${modalId}" not found.`);
+    }
   });
 });
 
-pjModalCloses.forEach((pjModalClose) => {
-  pjModalClose.addEventListener("click", () => {
-    pjModalViews.forEach((pjModalView) => {
-      pjModalView.classList.add("hidden");
-    });
+pjModalCloses.forEach((closeBtn) => {
+  closeBtn.addEventListener("click", () => {
+    closeBtn.closest(".modal").classList.add("hidden");
   });
 });
 
