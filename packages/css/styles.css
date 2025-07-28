@@ -732,13 +732,20 @@ img {
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
+
 }
+
+
 
 .services__modal-content {
   position: relative;
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
+  overflow-y: auto;          /* Enable vertical scroll */
+  scrollbar-width: thin;     /* For Firefox */
+  scrollbar-color: var(--scroll-thumb-color) var(--scroll-bar-color);
+  max-height: 80vh;
 }
 
 .services__modal-services {
