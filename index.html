@@ -1036,38 +1036,68 @@
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
         <!--==================== PORTFOLIO 1 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio1.jpg" alt="" class="portfolio__img">
 
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">Modern Dashboard</h3>
-                    <p class="portfolio__description">Data analitical dashboard adaptable to all devices, 
-                        with ui components and animated interactions.</p>
-                        <a href="#" class="button button--flex button--small portfolio__button view-more-btn" data-target="#portfolioModal1">
-                            View More
-                            <i class="uil uil-arrow-right button__icon"></i>
-                        </a>
 
-                        
-                </div>
+        <div class="portfolio__content grid swiper-slide">
+            <img src="./packages/images/CV/1/1.jpg" alt="" class="portfolio__img">
+          
+            <div class="portfolio_">
+              <h3 class="portfolio__title"> Surface Defect Detection Using Distributed Features (DF-SDD)   </h3>
+          
+              <ul class="portfolio__description-list">
+                <li>🧠 Proposes a novel low-complexity surface defect detection network (DF-SDD).</li>
+                <li>🧩 Introduces Distributed Convolution (DConv) and Distributed Depthwise Convolution (DDWConv).</li>
+                <li>🌐 Combines multi-scale features with Spatial Attention Gate (SAG) for enhanced fusion.</li>
+                <li>📈 Outperforms state-of-the-art networks (YOLOv8, Faster R-CNN, etc.) in mAP and complexity.</li>
+              </ul>
+              <br>
+              <strong>Tech stack:</strong> PyTorch, Python, NVIDIA RTX 4090 (hardware)
+          
+              <h3 class="portfolio__title"></h3>
+
+
+              <button type="" class="button button--flex pj__button" data-modal="modal-cv-1">
+                  More Details <i class="uil uil-arrow-right button__icon"></i>
+              </button>
+
+                  <!-- <a href="https://youtu.be/1ggh-2Fd3Hc" class="button button--flex button--small portfolio__button" target="_blank">
+              Demo
+              <i class="uil uil-play button__icon"></i>
+          </a> -->
+          <h3 class="portfolio__title"></h3>
+          
+             
             </div>
+          </div>
 
+        
             <!--==================== PORTFOLIO 2 ====================-->
         
             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio3.PNG" alt="" class="portfolio__img">
-
+                <img src="./packages/images/CV/2/1.jpg" alt="" class="portfolio__img">
+              
                 <div class="portfolio_">
-                    <h3 class="portfolio__title">E-Commerce website</h3>
-                    <p class="portfolio__description">Above Amazon clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
+                  <h3 class="portfolio__title">Specular Detection and Rendering for Immersive Multimedia</h3>
+              
+                  <ul class="portfolio__description-list">
+                    <li>🧠 Proposes VAUnet: a novel deep learning model with VAE and attention for specular highlight detection.</li>
+                    <li>🧩 Introduces a hybrid loss (dice + cross-entropy + KL divergence) for better mask accuracy.</li>
+                    <li>🎯 Achieves superior accuracy specular detection compared to existing methods (SHDnet, JSHDR, etc.).</li>
+                    <li>📦 Applies detection masks to MPEG-I rendering to enhance realism in immersive video.</li>
+                    
+                  </ul>
+                  <br>
+                  <strong>Tech stack:</strong> PyTorch, Python, MPEG-I, C++
+              
+                  <h3 class="portfolio__title"></h3>
+              
+                  <button type="" class="button button--flex pj__button" data-modal="modal-cv-2">
+                    More Details <i class="uil uil-arrow-right button__icon"></i>
+                  </button>
                 </div>
-            </div>
+              </div>
+              
+              
 
             <!--==================== PORTFOLIO 3 ====================-->
         
@@ -1157,7 +1187,7 @@
                       <h3 class="portfolio__title"></h3>
 
 
-                        <button type="" class="button button--flex pj__button" data-modal="modal-1">
+                        <button type="" class="button button--flex pj__button" data-modal="modal-llm-1">
                             More Details <i class="uil uil-arrow-right button__icon"></i>
                         </button>
 
@@ -1364,13 +1394,158 @@
      <!--==================== Project model ====================-->
 
 
+       <!--########========== CV Project===========####-->
+
+        <!--########========== CV1 1===========####-->
+
+        <div id="modal-cv-1" class="modal hidden">
+            <div class="modal-content">
+              <i class="uil uil-times close-modal"></i>
+              <h2>DF-SDD: Distributed Feature-based Surface Defect Detection</h2>
+              <p class="portfolio__modal-description">
+                A lightweight yet powerful surface defect detection network that introduces Distributed Convolution (DConv) and Distributed Depthwise Convolution (DDWConv) to efficiently capture both local and long-range features, while using Spatial Attention Gate (SAG) for feature fusion.
+              </p>
+          
+              <h4>📌 Architecture Overview</h4>
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/1/1.jpg" alt="DF-SDD Architecture Diagram">
+                <p class="portfolio__modal-caption">Overview of DF-SDD Network</p>
+              </div>
+
+
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/1/3.jpg" alt="Distributed Convolution">
+                <p class="portfolio__modal-caption">DConv and DWConv</p>
+              </div>
+          
+              <h4>🧩 Motivation</h4>
+              <p>
+                Traditional surface defect detectors rely heavily on standard convolution, limiting their ability to handle variations in defect texture and scale. DF-SDD aims to overcome these challenges with a more flexible and efficient design suited for real-world industrial applications.
+              </p>
+          
+              <h4>🚀 Project Contributions</h4>
+              <ul class="portfolio__modal-list">
+                <li>⚙️ Introduced DConv and DDWConv for larger receptive fields at low cost.</li>
+                <li>🧠 Designed DFEB block to capture both local and global features in parallel.</li>
+                <li>🌐 Used Spatial Attention Gate (SAG) for multi-level feature fusion across scales.</li>
+                <li>📉 Achieved state-of-the-art results with only 0.85M parameters and 6.2 GFLOPs.</li>
+              </ul>
+          
+              <h4>🛠️ Key Features</h4>
+              <ul class="portfolio__modal-list">
+                <li>🔍 Accurate detection of small and large defects (scratches, pits, inclusions).</li>
+                <li>📊 Multi-scale feature integration with dual-path fusion (top-down & bottom-up).</li>
+                <li>💡 Ablation study confirms importance of SAG, DML, LRB, and LEB modules.</li>
+                <li>📈 Highest mAP on NEU-DET (0.894) and GC10-DET (0.725).</li>
+              </ul>
+          
+              <h4>🔬 System Design</h4>
+              <p>
+                The DF-SDD network consists of three main stages: feature extraction (DFEB), feature fusion (SAG-based), and prediction. It uses a decoupled head for final bounding box prediction across three scales.
+              </p>
+          
+              <h4>🧪 Technologies Used</h4>
+              <ul class="portfolio__modal-list">
+                <li><strong>Framework:</strong> PyTorch</li>
+                <li><strong>Hardware:</strong> NVIDIA GeForce RTX 4090</li>
+                <li><strong>Datasets:</strong> NEU-DET, GC10-DET, CarDD</li>
+                <li><strong>Programming:</strong> Python</li>
+              </ul>
+          
+              <h4>📊 Evaluation Results</h4>
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/1/2.jpg" alt="DF-SDD Evaluation Results">
+                <!-- <p class="portfolio__modal-caption">Performance comparison on NEU-DET and GC10-DET</p> -->
+              </div>
+          
+              <h4>📂 Published Paper</h4>
+              <a href="https://doi.org/10.1016/j.engappai.2025.110655"
+                 target="_blank"
+                 class="button button--flex button--small portfolio__button">
+                View Publication
+                <i class="uil uil-file-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+
+
+          <!--########========== CV1 2===========#########-->
+
+          <div id="modal-cv-2" class="modal hidden">
+            <div class="modal-content">
+              <i class="uil uil-times close-modal"></i>
+              <h2>Specular Detection and Rendering for Immersive Multimedia</h2>
+              <p class="portfolio__modal-description">
+                A novel deep learning framework that detects and refines specular regions in 360° video, improving immersive video quality for multimedia applications such as VR and AR.
+              </p>
+          
+              <h4>📌 System Overview Diagram</h4>
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/2/1.jpg" alt="Specular Detection Architecture">
+                <!-- <p class="portfolio__modal-caption">Framework for specular detection and rendering.</p> -->
+              </div>
+          
+              <h4>🧩 Background</h4>
+              <p>
+                Specular highlights in immersive 360° content reduce visual quality and realism. Existing solutions often treat them as noise, ignoring their physical and perceptual importance. This project addresses this challenge by detecting specular regions and applying refined rendering to preserve or remove them based on context.
+              </p>
+          
+              <h4>🚀 Project Contributions</h4>
+              <ul class="portfolio__modal-list">
+                <li>📌 Designed VAUnet: high-performance variational attention U-network for specular highlight detection.</li>
+                <li>🔍 Hybrid loss function including combined structural loss (Dice + Cross-Entropy) with KL divergence to preserve fine boundary details and semantic coherence.</li>
+                <li>🎨 Integrated detected masks into MPEG-I based rendering pipeline to reconstruct or suppress specular highlights contextually.</li>
+                <li>📈 Demonstrated robustness across synthetic and real 360° datasets .</li>
+              </ul>
+          
+              <h4>🛠️ Key Features</h4>
+              <ul class="portfolio__modal-list">
+                <li>🧠 Mapping the input image into a standard normal distribution to accurately interpolate the output.</li>
+                <li>🧩 Attention fusion module for context-aware feature aggregation.</li>
+                <!-- <li>📦 Multi-scale decoding for fine-grained boundary preservation.</li> -->
+                <li>🎯 Integration with MPEG-I rendering for higher subjective rendering quality..</li>
+              </ul>
+          
+              <h4>🔬 System Design</h4>
+              <p>
+                The network follows an encoder-decoder structure with a standard normal distribution to encode input image and attention blocks. It uses U-net as backbone and outputs binary masks to guide rendering. The rendering system enhances specular realism or suppresses unwanted artifacts in immersive 360° content.
+              </p>
+          
+              <h4>🧪 Technologies Used</h4>
+              <ul class="portfolio__modal-list">
+                <li><strong>DL Framework:</strong> PyTorch</li>
+                <li><strong>Compression:</strong> MPEG-I (C++)</li>
+                <li><strong>Dataset:</strong> Specular detection (SRW,SHIQ)</li>
+                <li><strong>Compression Enviroment:</strong> Test Model 11 for MPEG Immersive Video Coding</li>
+                <li><strong>Application:</strong> Immersive multimedia rendering pipeline</li>
+              </ul>
+          
+              <h4>📊 Evaluation Results</h4>
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/2/2.jpg"  alt="Specular Detection Results">
+                <!-- <p class="portfolio__modal-caption">Comparison of before/after specular rendering.</p> -->
+              </div>
+          
+              <h4>📂 Published Paper</h4>
+              <a href="https://doi.org/10.1109/MMUL.2023.3262195" 
+                 target="_blank" 
+                 class="button button--flex button--small portfolio__button">
+                View Publication
+                <i class="uil uil-file-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+          
+
+
 
 
      <!--########========== LLM Project===========####-->
 
      <!--########========== LLM 1===========####-->
 
-    <div id="modal-1" class="modal hidden">
+    <div id="modal-llm-1" class="modal hidden">
         <div class="modal-content">
           <!-- <span class="close-modal">&times;</span> -->
           <i class="uil uil-times close-modal"></i>
