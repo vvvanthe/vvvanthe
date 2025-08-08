@@ -1177,6 +1177,7 @@
                         <ul class="portfolio__description-list">
                             <li>📄 Automates CV screening and question generation based on job descriptions (JDs).</li>
                             <li>🗣️ Integrates large language models (LLMs) to conducts natural voice interviews with dynamic Q&A.</li>
+                            <li>🌐 Web UI for data management,job description input,managing data, and real-time interviewing.</li>
                             <li>📊 Provides unbiased, consistent evaluations and candidate ranking.</li>
                             <li>🗃️ Stores candidate data, transcriptions, and reports in an integrated system.</li>
                           </ul>
@@ -1202,31 +1203,32 @@
             <!--==================== PORTFOLIO 2 ====================-->
         
             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/LLM/AI_interview.png" alt="" class="portfolio__img">
-
+                <img src="./packages/images/LLM/2/2.png" alt="" class="portfolio__img">
+              
                 <div class="portfolio_">
-                    <h3 class="portfolio__title">AI Interview 22: Transforming the Future of Recruitment   </h3>
-                    <p class="portfolio__description">
-                        <ul class="portfolio__description-list">
-                            <li>📄 Automates CV screening and question generation based on job descriptions (JDs).</li>
-                            <li>🗣️ Integrates large language models (LLMs) to conducts natural voice interviews with dynamic Q&A.</li>
-                            <li>📊 Provides unbiased, consistent evaluations and candidate ranking.</li>
-                            <li>🗃️ Stores candidate data, transcriptions, and reports in an integrated system.</li>
-                          </ul>
-                      </p>
-                      <br>
-                            <strong>Tech stack:</strong> Svelte, TailwindCSS (frontend); FastAPI (backend)
+                  <h3 class="portfolio__title">CV Screening: Automating Candidate Evaluation</h3>
+                  <p class="portfolio__description">
+                    <ul class="portfolio__description-list">
+                      <li>📄 Extracts and standardizes information from diverse CV formats using LLMs and Visual Language Models (VLMs).</li>
+                      <li>🛠️ Utilizes models such as DeepSeek, Owen, OpenAI API, LlamaIndex, and Ollama OCR for accurate data extraction.</li>
+                      <li>📊 Scores and ranks candidates based on customizable criteria including education, skills, experience, and roles.</li>
+                      <li>🌐 Features a web interface for uploading CVs and job descriptions, managing data, and viewing evaluation results.</li>
+                      <li>⚙️ Stores candidate data in database to simplify management and integration.</li>
+                    </ul>
+                  </p>
+                  <br>
+                  <strong>Tech stack:</strong> Svelte, TailwindCSS (frontend); FastAPI (backend)
                             
                       <h3 class="portfolio__title"></h3>
 
-                        <button type="" class="button button--flex pj__button" data-modal="modal-2">
-                            More Details
-                            <i class="uil uil-message button__icon"></i>
+
+                        <button type="" class="button button--flex pj__button" data-modal="modal-llm-2">
+                            More Details <i class="uil uil-arrow-right button__icon"></i>
                         </button>
 
-                            <a href="https://youtu.be/1ggh-2Fd3Hc" class="button button--flex button--small portfolio__button" target="_blank">
+                            <a href="https://youtu.be/ET7dJ9QvVis" class="button button--flex button--small portfolio__button" target="_blank">
                         Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
+                        <i class="uil uil-play button__icon"></i>
                     </a>
                     <h3 class="portfolio__title"></h3>
                 </div>
@@ -1447,7 +1449,6 @@
               <h4>🧪 Technologies Used</h4>
               <ul class="portfolio__modal-list">
                 <li><strong>Framework:</strong> PyTorch</li>
-                <li><strong>Hardware:</strong> NVIDIA GeForce RTX 4090</li>
                 <li><strong>Datasets:</strong> NEU-DET, GC10-DET, CarDD</li>
                 <li><strong>Programming:</strong> Python</li>
               </ul>
@@ -1579,7 +1580,7 @@
             <li>🗣️ Natural two-way interview using Google TTS/STT APIs and LLMs.</li>
             <li>🎯 Intelligent question branching based on candidate answers.</li>
             <li>📊 Automated scoring and evaluation reports.</li>
-            <li>🧠 Anti-cheating logic with randomized access and dynamic content.</li>
+            <li>🌐 Web UI for data management,job description input,managing data, and real-time interviewing.</li>
             <li>🗃️ Candidate management dashboard with full logs and transcripts.</li>
           </ul>
       
@@ -1627,14 +1628,76 @@
      <!--########========== LLM 2===========####-->
 
 
-      <div id="modal-2" class="modal hidden">
+     <div id="modal-llm-2" class="modal hidden">
         <div class="modal-content">
-          <!-- <span class="close-modal">&times;</span> -->
           <i class="uil uil-times close-modal"></i>
-          <h2>AI Interview Overview 22 </h2>
-          <p>This project automates interviews using LLMs 1...</p>
+          <h2>CV Screening Overview</h2>
+          <p class="portfolio__modal-description">
+            An automated candidate evaluation system that extracts, standardizes, and scores CV data from diverse formats using advanced language and vision models.
+          </p>
+      
+          <h4>📌 System Overview Diagram</h4>
+          <div class="portfolio__modal-image">
+            <img src="./packages/images/LLM/2/1.png" alt="CV Screening System Diagram">
+            <!-- <p class="portfolio__modal-caption">Diagram illustrating CV data extraction and scoring workflow.</p> -->
+          </div>
+      
+          <h4>🧩 Background</h4>
+          <p>
+            Manual CV screening is time-consuming and prone to inconsistency and bias. This project automates the process by leveraging Large Language Models (LLMs) and Visual Language Models (VLMs) to accurately extract and analyze candidate information across multiple CV formats.
+          </p>
+      
+          <h4>🚀 Project Goals</h4>
+          <ul class="portfolio__modal-list">
+            <li>Automate information extraction from varied CV formats into a unified JSON structure.</li>
+            <li>Score and rank candidates fairly based on customizable criteria including education, skills, experience, and roles.</li>
+            <li>Provide an intuitive web interface for uploading CVs and job descriptions and viewing evaluation results.</li>
+          </ul>
+      
+          <h4>🛠️ Key Features</h4>
+          <ul class="portfolio__modal-list">
+            <li>📄 Extraction of text and tables using models like DeepSeek, Owen, OpenAI API, LlamaIndex, and Ollama COR.</li>
+            <li>📊 Candidate scoring based on defined evaluation criteria with clear score descriptors.</li>
+            <li>🌐 Web UI for data management, CV uploading, job description input, and real-time scoring.</li>
+            <li>🗃️ Standardized JSON output for easy integration and management.</li>
+          </ul>
+      
+          <h4>🔬 System Architecture</h4>
+          <p>
+            The system integrates a frontend built with Svelte and TailwindCSS, a FastAPI backend for processing and scoring, and uses LLMs/VLMs for intelligent data extraction and evaluation.
+          </p>
+      
+          <h4>🧪 Technologies Used</h4>
+          <ul class="portfolio__modal-list">
+            <li><strong>Frontend:</strong> Svelte, TailwindCSS</li>
+            <li><strong>Backend:</strong> FastAPI, Python, PostgreSQL</li>
+            <li><strong>AI Modules:</strong> DeepSeek, Owen, OpenAI API, LlamaIndex, Ollama COR</li>
+          </ul>
+      
+          <h4>📊 Expected Impact</h4>
+          <ul class="portfolio__modal-list">
+            <li>Significantly reduce manual HR workload in CV screening.</li>
+            <li>Increase consistency and fairness in candidate evaluation.</li>
+            <li>Enable scalable recruitment for large applicant volumes.</li>
+          </ul>
+      
+          <h4>📋 Evaluation Result Sample</h4>
+          <div class="portfolio__modal-image">
+            <img src="./packages/images/LLM/2/3.png" alt="CV Screening Evaluation Result Sample">
+            <!-- <p class="portfolio__modal-caption">Sample candidate scoring and ranking.</p> -->
+          </div>
+      
+          <!-- <h4>📂 Proposal Slides</h4>
+          <a href="https://docs.google.com/presentation/d/your-proposal-link" 
+             target="_blank" 
+             class="button button--flex button--small portfolio__button">
+            View Proposal
+            <i class="uil uil-file-download button__icon"></i>
+          </a> -->
+      
         </div>
       </div>
+      
    
     <!--==================== SWIPER JS ====================-->
     <script src="./packages/js/swiper-bundle.min.js"></script>
