@@ -1673,3 +1673,12 @@ body.dark-theme .portfolio__modal-image img {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+.highlight-link {
+  color: var(--first-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.highlight-link:hover {
+  text-decoration: underline;
+}
