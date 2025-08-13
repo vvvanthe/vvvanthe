@@ -32,11 +32,7 @@
 
 ## 📂 Projects
 
-Check out some of my recent research projects and publications:
-
-- 🔬 **SHDRN**: A unified two-stage network for specular highlight detection and removal  
-- 🔗 [Specular Highlight Removal with QformerSHR](https://github.com/YOUR-REPO-LINK)  
-- 📄 [More on Publications & Papers →](https://scholar.google.com/citations?user=YOUR_ID)
+Check out some of my recent research projects: [portfolio](https://vvvanthe.github.io/vvvanthe/)
 
 ---
 

@@ -1075,7 +1075,7 @@
             <!--==================== PORTFOLIO 2 ====================-->
         
             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/CV/2/1.jpg" alt="" class="portfolio__img">
+                <img src="./packages/images/CV/2/1.jpg" alt="" class="portfolio__img"> 
               
                 <div class="portfolio_">
                   <h3 class="portfolio__title">Specular Detection and Rendering for Immersive Multimedia</h3>
@@ -1103,40 +1103,70 @@
             <!--==================== PORTFOLIO 3 ====================-->
         
             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio2.png" alt="" class="portfolio__img">
-
+                <img src="./packages/images/CV/3/1.png" alt="SHDRN Project Cover" class="portfolio__img"> 
+            
                 <div class="portfolio_">
-                    <h3 class="portfolio__title">Brand Design</h3>
-                    <p class="portfolio__description">Tesla Clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
+                    <h3 class="portfolio__title"> <strong>Doctoral Thesis:</strong> Specular Highlight Detection and Removal Network (SHDRN) </h3>
+            
+                    <ul class="portfolio__description-list">
+                        <li>💡 Proposes a two-stage SHDRN framework for accurate specular highlight detection and removal in natural images.</li>
+                        <li>🎯 Integrates VAUnet for precise specular mask generation and QformerSHR for high-quality removal.</li>
+                        <li>🌀 QformerSHR leverages Quaternion representation with DSQConv and QTB for efficient global context learning.</li>
+                        <li>🚀 Outperforms state-of-the-art CNN-based methods in visual quality and quantitative metrics.</li>
+                    </ul>
+                    <br>
+                    <strong>Tech stack:</strong> PyTorch, Python, Transformer, Quaternion Networks, Image Restoration
+            
+                    <h3 class="portfolio__title"></h3>
+            
+                    <button type="" class="button button--flex pj__button" data-modal="modal-cv-3">
+                        More Details <i class="uil uil-arrow-right button__icon"></i>
+                    </button>
+            
+                    <!-- <a href="https://youtu.be/your-demo-link" class="button button--flex button--small portfolio__button" target="_blank">
                         Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
+                        <i class="uil uil-play button__icon"></i>
+                    </a> -->
                 </div>
             </div>
+            
 
 
              <!--==================== PORTFOLIO 4 ====================-->
         
              <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio2.png" alt="" class="portfolio__img">
-
+                <img src="./packages/images/CV/4/1.png" alt="MRI Super-Resolution" class="portfolio__img">
+              
                 <div class="portfolio_">
-                    <h3 class="portfolio__title">Brand Design</h3>
-                    <p class="portfolio__description">Tesla Clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
-                        Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </a>
+                  <h3 class="portfolio__title">Lightweight 3D CNN for Brain MRI Super-Resolution</h3>
+              
+                  <ul class="portfolio__description-list">
+                    <li>🧠 Proposes a lightweight 3D convolutional network for high-quality brain MRI super-resolution.</li>
+                    <li>⚡ Designed with extraction, compression, and reconstruction modules for efficiency.</li>
+                    <li>📉 Reduces network parameters for real-time feasibility in MR scanners.</li>
+                    <li>📊 Outperforms conventional networks in PSNR/SSIM while lowering complexity.</li>
+                  </ul>
+                  <br>
+                  <strong>Tech stack:</strong> PyTorch, Python, 3D CNN, Medical Imaging, MRI Processing
+              
+                  <h3 class="portfolio__title"></h3>
+              
+                  <button type="" class="button button--flex pj__button" data-modal="modal-cv-4">
+                    More Details <i class="uil uil-arrow-right button__icon"></i>
+                  </button>
                 </div>
-            </div>
-                </div>
+              </div>
+              
+
+
+
+
+              
 
             
 
             <!-- add arrows-->
+            </div>
             <div class="swiper-button-next">
                 <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
             </div>
@@ -1162,7 +1192,7 @@
         <!--==================== TESTIMONIAL ====================-->
         <section class="portfolio section" id="llmproject">
 
-            <h2 class="section__title">LLM projects</h2>
+            <h2 class="section__title">LLM Projects</h2>
             <span class="section__subtitle">Most recent works</span>
 
             <div class="portfolio__container container swiper-container">
@@ -1538,6 +1568,161 @@
               </a>
             </div>
           </div>
+
+
+          <!--########========== CV1 3===========#########-->
+
+          <div id="modal-cv-3" class="modal hidden">
+            <div class="modal-content">
+              <i class="uil uil-times close-modal"></i>
+              <h2>SHDRN: Specular Highlight Detection and Removal Network</h2>
+              <p class="portfolio__modal-description">
+                A two-stage network for accurate detection and removal of complex specular highlights in natural images.
+                Combines VAUnet for precise detection with QformerSHR, a Quaternion transformer-based removal network.
+              </p>
+          
+              <h4>📌 Architecture Overview</h4>
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/3/2.png" alt="SHDRN Architecture Diagram">
+                <p class="portfolio__modal-caption">Two-stage SHDRN framework: VAUnet + QformerSHR</p>
+              </div>
+          
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/3/3.png" alt="Quaternion Transformer Components">
+                <p class="portfolio__modal-caption">DSQConv and Quaternion Multi-head attention ()</p>
+              </div>
+          
+              <h4>🧩 Motivation</h4>
+              <p>
+                Specular highlights hinder many computer vision tasks by obscuring texture and shape information.
+                Traditional CNN-based methods fail to capture global context effectively and ignore RGB structural correlations.
+                SHDRN addresses these issues by combining detection and removal into a unified, robust framework.
+              </p>
+          
+              <h4>🚀 Project Contributions</h4>
+              <ul class="portfolio__modal-list">
+                <li>🎯 Proposed a two-stage SHDRN pipeline for specular highlight removal.</li>
+                <li>🧠 Developed QformerSHR using Quaternion representation for RGB structural preservation.</li>
+                <li>⚡ Introduced DSQConv for efficient computation with enhanced spatial correlation.</li>
+                <li>🌍 Integrated QTB to capture long-range dependencies for better restoration.</li>
+                <li>📈 Achieved superior PSNR and SSIM compared to state-of-the-art methods.</li>
+              </ul>
+          
+              <h4>🛠️ Key Features</h4>
+              <ul class="portfolio__modal-list">
+                <li>🔍 Accurate specular mask generation with VAUnet.</li>
+                <li>💡 Transformer-based highlight removal for global context learning.</li>
+                <li>🌀 Quaternion convolution to retain RGB inter-channel correlations.</li>
+                <li>📊 Hybrid training strategy for robust and efficient learning.</li>
+              </ul>
+          
+              <h4>🔬 System Design</h4>
+              <p>
+                SHDRN first uses VAUnet to detect and localize specular highlights, generating binary masks. 
+                These masks, along with the original image, are fed into QformerSHR, which performs highlight removal using 
+                DSQConv and QTB modules. The hybrid training strategy jointly optimizes both stages for better synergy.
+              </p>
+          
+              <h4>🧪 Technologies Used</h4>
+              <ul class="portfolio__modal-list">
+                <li><strong>Framework:</strong> PyTorch</li>
+                <li><strong>Programming:</strong> Python</li>
+                <li><strong>Techniques:</strong> Quaternion Transformers, DSQConv, Image Restoration</li>
+                <li><strong>Datasets:</strong> Multiple natural and text-image datasets with specular highlights</li>
+              </ul>
+          
+              <h4>📊 Evaluation Results</h4>
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/3/4.png" alt="SHDRN Evaluation Results">
+                <p class="portfolio__modal-caption">Performance comparison on natural image datasets</p>
+              </div>
+          
+          
+              <h4>📂 Proposal Slides</h4>
+                <a href="https://drive.google.com/file/d/1wN31NO67Z7c8hoKPbfkv5TXLGlJDS78s/view?usp=sharing" 
+                    target="_blank" 
+                    class="button button--flex button--small portfolio__button">
+                    View Proposal
+                    <i class="uil uil-file-download button__icon"></i>
+                    </a>
+            </div>
+          </div>
+          
+
+          <!--########========== CV1 4===========#########-->
+
+          <div id="modal-cv-4" class="modal hidden">
+            <div class="modal-content">
+              <i class="uil uil-times close-modal"></i>
+              <h2>Lightweight 3D CNN for Brain MRI Super-Resolution</h2>
+          
+              <p class="portfolio__modal-description">
+                A computationally efficient deep learning network for enhancing brain MRI resolution, designed with 3D convolution to handle volumetric medical data. The network integrates extraction, compression, and reconstruction parts with skip connections for optimal performance while maintaining low complexity for real-time applications.
+              </p>
+          
+              <h4>📌 Architecture Overview</h4>
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/4/2.png" alt="MRI SR Architecture Diagram">
+                <p class="portfolio__modal-caption">Overview of the lightweight 3D CNN architecture</p>
+              </div>
+          
+              <h4>🧩 Motivation</h4>
+              <p>
+                High-resolution brain MRI provides exceptional anatomical detail but is often limited by long scan times, high magnetic field requirements, and low SNR. Conventional super-resolution networks are computationally heavy and unsuitable for integration into MR scanners. This project aims to design an efficient, high-quality MRI SR network that meets real-time constraints.
+              </p>
+          
+              <h4>🚀 Project Contributions</h4>
+              <ul class="portfolio__modal-list">
+                <li>⚙️ Designed a lightweight 3D CNN tailored for volumetric brain MRI data.</li>
+                <li>🔗 Integrated skip connections between extraction, compression, and reconstruction modules for better gradient flow.</li>
+                <li>📉 Reduced computational cost using 1×1×1 convolution in the compression stage.</li>
+                <li>📊 Achieved high PSNR and SSIM with significantly fewer parameters than conventional networks.</li>
+              </ul>
+          
+              <h4>🛠️ Key Features</h4>
+              <ul class="portfolio__modal-list">
+                <li>🧠 Handles volumetric MRI data directly with 3D convolutions.</li>
+                <li>💡 Efficient network design suitable for integration into MR scanners.</li>
+                <li>🖼️ Produces clearer anatomical details without over-smoothing.</li>
+                <li>⚡ Fast inference speed for clinical applications.</li>
+              </ul>
+          
+              <h4>🔬 System Design</h4>
+              <p>
+                The network consists of:
+                <ul>
+                  <li><strong>Extraction part:</strong> Captures low-level 3D features from MRI volumes.</li>
+                  <li><strong>Compression part:</strong> Reduces redundancy and complexity using 1×1×1 convolutions.</li>
+                  <li><strong>Reconstruction part:</strong> Restores high-resolution MRI with preserved anatomical details.</li>
+                </ul>
+                Skip connections are employed to preserve spatial information across stages.
+              </p>
+          
+              <h4>🧪 Technologies Used</h4>
+              <ul class="portfolio__modal-list">
+                <li><strong>Framework:</strong> PyTorch</li>
+                <li><strong>Programming:</strong> Python</li>
+                <li><strong>Domain:</strong> Medical Image Processing, MRI</li>
+                <li><strong>Model Type:</strong> 3D Convolutional Neural Network</li>
+              </ul>
+          
+              <h4>📊 Evaluation Results</h4>
+              <div class="portfolio__modal-image">
+                <img src="./packages/images/CV/4/3.png" alt="MRI SR Results">
+                <p class="portfolio__modal-caption">Comparison of proposed network with baseline SR methods</p>
+              </div>
+          
+              
+          
+              <h4>📂 Published Paper</h4>
+              <a href="https://link.springer.com/article/10.1007/s11042-023-15969-8" target="_blank" class="button button--flex button--small portfolio__button">
+                View Publication
+                <i class="uil uil-file-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+          
+
           
 
 
