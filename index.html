@@ -131,7 +131,7 @@
                             <p class="home__description">
                                 As a postdoctoral researcher at 
                                 <a href="https://sites.google.com/view/ivcl" target="_blank" class="highlight-link">IVCLab</a>, 
-                                Sejong University, since September 2025, my work centers on developing and applying AI methodologies to solve challenges in image processing and computer vision.
+                                Sejong University, since September 2025, my work centers on developing and applying AI methodologies to solve challenges in image processing and computer vision.In parallel, I independently develop LLM-based projects, exploring integration with VLMs.
                               </p>
                               <a href="#contact" class="button button--flex home__button">
                                 Contact Me<i class="uil uil-message button__icon"></i>
@@ -176,7 +176,7 @@
                         </div>
 
                         <div class="about__buttons">
-                            <a download="" href="packages/pdf/" class="button button--flex">
+                            <a download="" href="packages/LE_VAN_THE_CV.pdf" target="_blank" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon "></i>
                             </a>
                         </div>
@@ -1110,7 +1110,7 @@
                 <img src="./packages/images/CV/3/1.png" alt="SHDRN Project Cover" class="portfolio__img"> 
             
                 <div class="portfolio_">
-                    <h3 class="portfolio__title"> <strong>Doctoral Thesis:</strong> Specular Highlight Detection and Removal Network (SHDRN) </h3>
+                    <h3 class="portfolio__title"> <strong>Doctoral Disseration:</strong> Deep learning based specular highlight detection and removal (SHDRN) </h3>
             
                     <ul class="portfolio__description-list">
                         <li>💡 Proposes a two-stage SHDRN framework for accurate specular highlight detection and removal in natural images.</li>
@@ -1276,18 +1276,36 @@
             <!--==================== PORTFOLIO 3 ====================-->
         
             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/portfolio2.png" alt="" class="portfolio__img">
+              <img src="./packages/images/LLM/3/1.png" alt="" class="portfolio__img">
+          
+              <div class="portfolio_">
+                  <h3 class="portfolio__title">Multimodal RAG: Intelligent Document Understanding</h3>
+                  <p class="portfolio__description">
+                      <ul class="portfolio__description-list">
+                        <li>📄 Automatically extracts and summarizes text, tables, and images from complex documents, retaining only content-relevant images using VLMs and LLMs.</li>
+                        <li>🗣️ Uses LLMs to answer user queries with context-aware reasoning.</li>
+                        <li>🔍 Leverages MultiVectorRetriever to efficiently search across multiple embeddings (text, tables, and image captions) for precise retrieval.</li>
+                        <li>🌐 Provides a Web UI for uploading PDFs, viewing extraction results, and interacting via a chat interface.</li>
+                      </ul>
+                  </p>
+                  <br>
+                  <strong>Tech stack:</strong> Svelte, TailwindCSS (frontend); FastAPI, LangChain, Ollama (backend)
+                  
+                  <h3 class="portfolio__title"></h3>
 
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">Brand Design</h3>
-                    <p class="portfolio__description">Tesla Clone is adaptable to all devices, with 
-                        ui components and animated interactions.</p>
-                    <a href="#" class="button button--flex button--small portfolio__button">
+
+                        <button type="" class="button button--flex pj__button" data-modal="modal-llm-3">
+                            More Details <i class="uil uil-arrow-right button__icon"></i>
+                        </button>
+
+                            <a href="https://youtu.be/qUarOhdrSwY" class="button button--flex button--small portfolio__button" target="_blank">
                         Demo
-                        <i class="uil uil-arrow-right button__icon"></i>
+                        <i class="uil uil-play button__icon"></i>
                     </a>
-                </div>
-            </div>
+                    <h3 class="portfolio__title"></h3>
+              </div>
+          </div>
+          
 
 
              <!--==================== PORTFOLIO 4 ====================-->
@@ -1579,7 +1597,7 @@
           <div id="modal-cv-3" class="modal hidden">
             <div class="modal-content">
               <i class="uil uil-times close-modal"></i>
-              <h2>SHDRN: Specular Highlight Detection and Removal Network</h2>
+              <h2>Deep learning based specular highlight detection and removal (SHDRN)</h2>
               <p class="portfolio__modal-description">
                 A two-stage network for accurate detection and removal of complex specular highlights in natural images.
                 Combines VAUnet for precise detection with QformerSHR, a Quaternion transformer-based removal network.
@@ -1887,6 +1905,73 @@
       
         </div>
       </div>
+
+
+      <!--########========== LLM 3===========####-->
+
+      <div id="modal-llm-3" class="modal hidden">
+        <div class="modal-content">
+            <i class="uil uil-times close-modal"></i>
+            <h2>Multimodal RAG Overview</h2>
+            <p class="portfolio__modal-description">
+                A multimodal retrieval-augmented generation (RAG) system that integrates vision-language models (VLMs) and large language models (LLMs) to extract, summarize, and answer queries on complex documents containing text, tables, and images.
+            </p>
+    
+            <h4>📌 System Overview Diagram</h4>
+            <div class="portfolio__modal-image">
+                <img src="./packages/images/LLM/3/2.png" alt="Multimodal RAG System Diagram">
+            </div>
+    
+            <h4>🧩 Background</h4>
+            <p>
+                Handling complex documents—such as admission guides, reports, or research papers—is challenging due to mixed layouts, tables, and images. Existing PDF extraction tools often fail to parse such content accurately. This motivated the development of a multimodal RAG system that leverages VLMs for images and LLMs for text, enabling accurate retrieval and question answering.
+            </p>
+    
+            <h4>🚀 Project Goals</h4>
+            <ul class="portfolio__modal-list">
+                <li>Enable robust extraction and summarization of text, tables, and images from complex documents.</li>
+                <li>Provide accurate answers to user queries by combining content from multiple modalities.</li>
+                <li>Build an interactive web interface for document uploading, extraction visualization, and chat-based querying.</li>
+            </ul>
+    
+            <h4>🛠️ Key Features</h4>
+            <ul class="portfolio__modal-list">
+              <li>📄 Automatic extraction and summarization of text and tables using LLMs.</li>
+              <li>🖼️ Uses VLMs to filter out decorative or irrelevant images and retain only content-relevant visuals, generating accurate captions for figures, charts, and diagrams.</li>
+              <li>🗣️ Context-aware question answering using LLMs.</li>
+              <li>🔍 MultiVectorRetriever for efficient retrieval across text, table, and image embeddings.</li>
+              <li>🌐 Web UI for uploading PDFs and querying documents interactively.</li>
+          </ul>
+    
+            <h4>🔬 System Architecture</h4>
+            <p>
+                The system consists of a frontend interface (Svelte + TailwindCSS) for PDF upload, visualization, and chat interaction, and a backend (FastAPI + Python) handling extraction, embedding, and retrieval. MultiVectorRetriever searches across multiple embeddings, while LLMs generate summaries and answers. VLMs process images to produce meaningful captions.
+            </p>
+    
+            <h4>🧪 Technologies Used</h4>
+            <ul class="portfolio__modal-list">
+                <li><strong>Frontend:</strong> Svelte, TailwindCSS</li>
+                <li><strong>Backend:</strong> FastAPI, LangChain, Ollama</li>
+                <li><strong>AI Modules:</strong> Gamma3, DeepSeek-R1</li>
+                <li><strong>Retrieval:</strong> MultiVectorRetriever, Vector Database</li>
+            </ul>
+    
+            <h4>📊 Expected Impact</h4>
+            <ul class="portfolio__modal-list">
+                <li>Enable users to quickly extract and understand complex documents.</li>
+                <li>Reduce time spent manually parsing tables, figures, and long text.</li>
+                <li>Provide accurate, context-aware answers from multimodal sources.</li>
+            </ul>
+    
+            <h4>📋 Result Sample</h4>
+            <div class="portfolio__modal-image">
+                <img src="./packages/images/LLM/3/3.png" alt="Extraction Result Sample">
+            </div>
+    
+        
+        </div>
+    </div>
+    
       
    
     <!--==================== SWIPER JS ====================-->
