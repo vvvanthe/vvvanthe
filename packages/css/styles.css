@@ -1883,6 +1883,16 @@ body.dark-theme .portfolio__modal-image img {
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 768px) {
 
+  .portfolio__content {
+    grid-template-columns: 1fr; /* 1 column only */
+    row-gap: 2rem;             /* add space between image and text */
+  }
+
+  .portfolio__img {
+    width: 100%;  /* make image responsive */
+    height: auto;
+  }
+
   .slideshowContainer {
     height: 300px; /* reduce height for smaller screens */
     margin: 30px 0 50px;
