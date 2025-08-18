@@ -44,12 +44,12 @@
 
                         <li class="nav__item">
                             <a href="#qualification" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i>Qualification
+                                <i class="uil uil-graduation-cap nav__icon"></i>Qualification
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                                <i class="uil uil-brackets-curly nav__icon"></i>Skills
                             </a>
                         </li>
                         <li class="nav__item">
@@ -65,7 +65,7 @@
 
                         <li class="nav__item">
                           <a href="#memories" class="nav__link">
-                              <i class="uil uil-briefcase-alt nav__icon"></i>Memories
+                              <i class="uil uil-folder-heart nav__icon"></i>Memories
                           </a>
                       </li>
                         
@@ -2035,20 +2035,7 @@
     <!--==================== SWIPER JS ====================-->
     <script src="./packages/js/swiper-bundle.min.js"></script>
 
-    var myIndex = 0;
-    carousel();
 
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-    }
 
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>
