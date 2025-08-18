@@ -13,6 +13,8 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles.css">
 
+        
+
         <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10644/10644640.png"
         type="image/x-icon" />
 
@@ -60,6 +62,12 @@
                                 <i class="uil uil-briefcase-alt nav__icon"></i>Projects
                             </a>
                         </li>
+
+                        <li class="nav__item">
+                          <a href="#memories" class="nav__link">
+                              <i class="uil uil-briefcase-alt nav__icon"></i>Memories
+                          </a>
+                      </li>
                         
                         <!-- <li class="nav__item">
                             <a href="#llmproject" class="nav__link">
@@ -1332,6 +1340,56 @@
 
             </section>
 
+
+        <!--==================== SLIDES ====================-->
+        <section class="slides section" id="memories">
+          <h2 class="section__title">Memories</h2>
+          <span class="section__subtitle">Capturing Moments</span>
+          <div class="contact__container container">
+            <div class="slideshowContainer">
+  
+              <!-- Replace the image 'src' with the images in your project.
+              Javascript is set up so that you can add as many images as you like, but make sure that you match the number of 'circle' span elements (below) to the number of images -->
+                <img class="imageSlides" src="./packages/images/slides/1.jpg" alt="beach side city view 2">
+                <div id = "slideCaptions" class="caption ">
+                  SIGGRAPH ASIA 2023, Sydney, Australia
+                </div>
+
+                
+
+                
+                <img class="imageSlides" src="./packages/images/slides/2.jpg" alt="beach side city view">
+                <img class="imageSlides" src="./packages/images/slides/3.jpg" alt="leaf on the ground">
+                <img class="imageSlides" src="./packages/images/slides/4.jpg" alt="lake surrounded by mountains">
+                <img class="imageSlides" src="./packages/images/slides/5.jpg" alt="lake surrounded by mountains2">
+                
+              <!-- I would recommend to replace these 'span' elements with 'img' files
+              for each the left and right arrow that fits your project, and size accordingly.
+              I've shown 'span' elements because I didn't want to upload files. -->
+                <span id ="leftArrow" class="slideshowArrow">&#8249;</span>
+                <span id ="rightArrow" class="slideshowArrow">&#8250;</span>
+                
+                <div class="slideshowCircles">
+              <!-- Filled 'dot' class is set to first image in slideshow, and then via Javascript the filled 'dot' class follows the current image.
+              Make sure you match the number of these 'circle' span elements to the number of images in your slideshow. -->
+                  <span class="circle dot"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                  <span class="circle"></span>
+                </div>
+                
+              </div>
+           
+         
+        </div>
+         
+           
+
+        
+
+      </section>
+
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact me</h2>
@@ -1976,6 +2034,21 @@
    
     <!--==================== SWIPER JS ====================-->
     <script src="./packages/js/swiper-bundle.min.js"></script>
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
 
     <!--==================== MAIN JS ====================-->
     <script src="./packages/js/main.js"></script>

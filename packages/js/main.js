@@ -389,3 +389,88 @@ pjModalCloses.forEach((closeBtn) => {
 //     });
 //   });
 // });
+
+// IMAGE SLIDES & CIRCLES ARRAYS, & COUNTER
+var imageSlides = document.getElementsByClassName('imageSlides');
+var circles = document.getElementsByClassName('circle');
+var leftArrow = document.getElementById('leftArrow');
+var rightArrow = document.getElementById('rightArrow');
+var counter = 0;
+// Captions array
+const captions = [
+  "SIGGRAPH ASIA 2023, Sydney, Australia",
+  "Automotive World 2024, Tokyo, Japan",
+  "Speech in IPUT 2024, Tokyo, Japan",
+  "ICIP 2024, Abu Dhabi, UAE",
+  "Thesis Defense 2025, Seoul, South Korea"
+];// Caption element
+const caption = document.getElementById('slideCaptions');
+
+// HIDE ALL IMAGES FUNCTION
+function hideImages() {
+  for (var i = 0; i < imageSlides.length; i++) {
+    imageSlides[i].classList.remove('visible');
+  }
+}
+
+// REMOVE ALL DOTS FUNCTION
+function removeDots() {
+  for (var i = 0; i < imageSlides.length; i++) {
+    circles[i].classList.remove('dot');
+  }
+}
+
+// SINGLE IMAGE LOOP/CIRCLES FUNCTION
+function imageLoop() {
+  var currentImage = imageSlides[counter];
+  var currentDot = circles[counter];
+  currentImage.classList.add('visible');
+  removeDots();
+  currentDot.classList.add('dot');
+
+  // update caption based on current index
+  caption.innerText = captions[counter];
+
+  counter++;
+}
+
+// LEFT & RIGHT ARROW FUNCTION & CLICK EVENT LISTENERS
+function arrowClick(e) {
+  var target = e.target;
+  clearInterval(imageSlideshowInterval);
+  hideImages();
+  removeDots();
+
+  if (target == leftArrow) {
+    if (counter == 1) {
+      counter = (imageSlides.length - 1);
+    } else {
+      counter -= 2;
+    }
+  } else if (target == rightArrow) {
+    if (counter == imageSlides.length) {
+      counter = 0;
+    }
+  }
+
+  imageLoop();
+  imageSlideshowInterval = setInterval(slideshow, 10000);
+}
+
+leftArrow.addEventListener('click', arrowClick);
+rightArrow.addEventListener('click', arrowClick);
+
+// IMAGE SLIDE FUNCTION
+function slideshow() {
+  if (counter < imageSlides.length) {
+    imageLoop();
+  } else {
+    counter = 0;
+    hideImages();
+    imageLoop();
+  }
+}
+
+// SHOW FIRST IMAGE, & THEN SET & CALL SLIDE INTERVAL
+setTimeout(slideshow, 1000);
+var imageSlideshowInterval = setInterval(slideshow, 10000);
