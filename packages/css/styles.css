@@ -1469,14 +1469,13 @@ img {
 }
 
 
-
 .pj__button {
-  all: unset; /* Reset everything */
+  all: unset;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--first-color);
   color: #fff;
-  /* padding: 1rem; */
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
   font-family: var(--body-font);
@@ -1484,13 +1483,15 @@ img {
   cursor: pointer;
   transition: 0.3s;
   padding: 0.75rem 1rem;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .pj__button:hover {
   background-color: var(--first-color-alt);
 }
 
-.pj__button.button__icon {
+.pj__button .button__icon {
   font-size: 1.2rem;
   margin-left: var(--mb-0-5);
   transition: 0.3s;
@@ -1498,6 +1499,25 @@ img {
 
 .pj__button:hover .button__icon {
   transform: translateX(0.25rem);
+}
+
+.button.portfolio__button {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background-color: var(--first-color-light);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.button.portfolio__button:hover {
+  background-color: var(--first-color-alt);
 }
 
 
@@ -1673,9 +1693,11 @@ body.dark-theme .portfolio__modal-image img {
     align-items: flex-start;
   }
 
-  .button.portfolio__button {
-    font-size: 0.9rem;
-    padding: 0.4rem 1rem;
+  .portfolio__buttons {
+    display: flex;
+    flex-direction: column; /* stack vertically on mobile */
+    gap: 0.5rem;
+    width: 100%;
   }
 
   .portfolio__modal-close {
@@ -1826,7 +1848,37 @@ body.dark-theme .portfolio__modal-image img {
 }
 
 
+.button.portfolio__button {
+  all: unset; /* reset inherited styles */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem; /* same as pj__button */
+  font-size: var(--normal-font-size); /* same as pj__button */
+  font-weight: var(--font-medium);
+  font-family: var(--body-font);
+  border-radius: 0.5rem;
+  background-color: var(--first-color);
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  transition: 0.3s;
+}
 
+.button.portfolio__button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button.portfolio__button .button__icon {
+  font-size: 1.2rem;
+  margin-left: 0.25rem;
+  transition: 0.3s;
+}
+
+.button.portfolio__button:hover .button__icon {
+  transform: translateX(0.25rem);
+}
 
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 768px) {
@@ -1942,7 +1994,7 @@ body.dark-theme .portfolio__modal-image img {
     align-items: center;
   }
 
-  
+
   
 }
 

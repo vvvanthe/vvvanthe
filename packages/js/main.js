@@ -415,7 +415,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const diffX = touch.clientX - startX;
     const diffY = touch.clientY - startY;
 
-    // Only prevent default if horizontal movement is larger than vertical
     if (Math.abs(diffX) > Math.abs(diffY)) {
       e.preventDefault();
     }
@@ -436,13 +435,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ================= MOUSE WHEEL =================
   slideshow.addEventListener('wheel', (e) => {
-    // Only handle horizontal scrolling
     if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
       e.preventDefault();
       if (e.deltaX < 0) leftArrowClick();
       else rightArrowClick();
     }
-    // Vertical scroll is left untouched
   }, { passive: false });
+
+  // ================= MOUSE DRAG =================
+  let mouseStartX = 0;
+  let mouseDragging = false;
+
+  slideshow.addEventListener('mousedown', (e) => {
+    mouseStartX = e.clientX;
+    mouseDragging = true;
+  });
+
+  slideshow.addEventListener('mousemove', (e) => {
+    if (!mouseDragging) return;
+    // Optional: you can add visual feedback here while dragging
+  });
+
+  slideshow.addEventListener('mouseup', (e) => {
+    if (!mouseDragging) return;
+    const mouseEndX = e.clientX;
+    const diffX = mouseEndX - mouseStartX;
+
+    if (diffX > threshold) leftArrowClick();
+    else if (diffX < -threshold) rightArrowClick();
+
+    mouseDragging = false;
+  });
+
+  // Also cancel dragging if mouse leaves slideshow container
+  slideshow.addEventListener('mouseleave', () => {
+    mouseDragging = false;
+  });
 
 });
