@@ -68,29 +68,6 @@ tabs.forEach((tab) => {
   });
 });
 
-/*==================== SERVICES MODAL ====================*/
-// const modalViews = document.querySelectorAll(".services__modal"),
-//   modalBtns = document.querySelectorAll(".services__button"),
-//   modalCloses = document.querySelectorAll(".services__modal-close");
-
-// let modal = function (modalClick) {
-//   modalViews[modalClick].classList.add("active-modal");
-// };
-
-// modalBtns.forEach((modalBtn, i) => {
-//   modalBtn.addEventListener("click", () => {
-//     modal(i);
-//   });
-// });
-
-// modalCloses.forEach((modalClose) => {
-//   modalClose.addEventListener("click", () => {
-//     modalViews.forEach((modalView) => {
-//       modalView.classList.remove("active-modal");
-//     });
-//   });
-// });
-
 
 const serviceModalButtons = document.querySelectorAll(".services__button");
 const serviceModalCloseButtons = document.querySelectorAll(".services__modal-close");
@@ -174,26 +151,6 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
-
-// function scrollActive() {
-//   const scrollY = window.pageYOffset;
-
-//   sections.forEach((current) => {
-//     const sectionHeight = current.offsetHeight;
-//     const sectionTop = current.offsetTop - 50;
-//     sectionId = current.getAttribute("id");
-
-//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-//       document
-//         .querySelector(".nav__menu a[href*=" + sectionId + "]")
-//         .classList.add("active-link");
-//     } else {
-//       document
-//         .querySelector(".nav__menu a[href*=" + sectionId + "]")
-//         .classList.remove("active-link");
-//     }
-//   });
-// }
 
 function scrollActive() {
   const scrollY = window.pageYOffset;
@@ -367,29 +324,6 @@ pjModalCloses.forEach((closeBtn) => {
 });
 
 
-/*==================== SERVICES MODAL ====================*/
-// const modalViews = document.querySelectorAll(".services__modal"),
-//   modalBtns = document.querySelectorAll(".services__button"),
-//   modalCloses = document.querySelectorAll(".services__modal-close");
-
-// let modal = function (modalClick) {
-//   modalViews[modalClick].classList.add("active-modal");
-// };
-
-// modalBtns.forEach((modalBtn, i) => {
-//   modalBtn.addEventListener("click", () => {
-//     modal(i);
-//   });
-// });
-
-// modalCloses.forEach((modalClose) => {
-//   modalClose.addEventListener("click", () => {
-//     modalViews.forEach((modalView) => {
-//       modalView.classList.remove("active-modal");
-//     });
-//   });
-// });
-
 // IMAGE SLIDES & CIRCLES ARRAYS, & COUNTER
 document.addEventListener('DOMContentLoaded', function() {
   // IMAGE SLIDES & CIRCLES ARRAYS, & COUNTER
@@ -462,6 +396,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ================= TOUCH SWIPE =================
   let startX = 0;
+  let startY = 0;
   let isDragging = false;
   const threshold = 50; // minimum px to trigger swipe
 
@@ -469,12 +404,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   slideshow.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
     isDragging = true;
   });
 
   slideshow.addEventListener('touchmove', (e) => {
-    if (isDragging) {
-      e.preventDefault(); // Prevent page scroll
+    if (!isDragging) return;
+
+    const touch = e.touches[0];
+    const diffX = touch.clientX - startX;
+    const diffY = touch.clientY - startY;
+
+    // Only prevent default if horizontal movement is larger than vertical
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+      e.preventDefault();
     }
   }, { passive: false });
 
@@ -488,13 +431,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     isDragging = false;
     startX = 0;
+    startY = 0;
   });
 
   // ================= MOUSE WHEEL =================
   slideshow.addEventListener('wheel', (e) => {
-    e.preventDefault(); // prevent vertical page scroll
-    if (e.deltaY < 0) leftArrowClick();  // scroll up
-    else if (e.deltaY > 0) rightArrowClick(); // scroll down
+    // Only handle horizontal scrolling
+    if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+      e.preventDefault();
+      if (e.deltaX < 0) leftArrowClick();
+      else rightArrowClick();
+    }
+    // Vertical scroll is left untouched
   }, { passive: false });
 
 });
