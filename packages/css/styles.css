@@ -1912,11 +1912,20 @@ body.dark-theme .portfolio__modal-image img {
     height: 10px;
   }
 
-  /* Line width */
+  /* Line - remove transform and align under circle */
   .qualification__line {
     width: 2px;
-    transform: translateX(0); /* remove offsets for alignment */
     height: 100%;
+    transform: none; /* remove previous offsets */
+    margin: 0; /* ensure no extra spacing */
+  }
+
+  /* Center the timeline column */
+  .qualification__data > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* circle and line vertically aligned */
+    position: relative;
   }
   
 }
