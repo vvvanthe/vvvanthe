@@ -437,39 +437,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // update caption
     caption.innerText = captions[counter];
+  }
 
+  // LEFT ARROW FUNCTION
+  function leftArrowClick() {
+    counter--;
+    if (counter < 0) counter = imageSlides.length - 1;
+    imageLoop();
+  }
+
+  // RIGHT ARROW FUNCTION
+  function rightArrowClick() {
     counter++;
-    if (counter >= imageSlides.length) {
-      counter = 0;
-    }
-  }
-
-  // LEFT & RIGHT ARROW FUNCTION & CLICK EVENT LISTENERS
-  function arrowClick(e) {
-    clearInterval(imageSlideshowInterval);
-
-    if (e.target == leftArrow) {
-      counter -= 2;
-      if (counter < 0) counter = imageSlides.length - 1;
-    }
-    imageLoop();
-
-    imageSlideshowInterval = setInterval(slideshow, 10000);
-  }
-
-  leftArrow.addEventListener('click', arrowClick);
-  rightArrow.addEventListener('click', function(e) {
-    clearInterval(imageSlideshowInterval);
-    imageLoop();
-    imageSlideshowInterval = setInterval(slideshow, 10000);
-  });
-
-  // IMAGE SLIDE FUNCTION
-  function slideshow() {
+    if (counter >= imageSlides.length) counter = 0;
     imageLoop();
   }
 
-  // INITIAL CALL
-  slideshow();
-  var imageSlideshowInterval = setInterval(slideshow, 10000);
+  // INITIAL DISPLAY
+  imageLoop();
+
+  // EVENT LISTENERS
+  leftArrow.addEventListener('click', leftArrowClick);
+  rightArrow.addEventListener('click', rightArrowClick);
 });
