@@ -1789,9 +1789,11 @@ body.dark-theme .portfolio__modal-image img {
 }
 
 .dot {
-  background-color: rgba(255, 255, 255, 0.7);
-  border: solid 2px rgba(255, 255, 255, 0.5);
+  background-color:  var(--first-color);;
+  border: solid 2px  var(--first-color);;
 }
+
+
 
 /* .w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
 .w3-tiny{font-size:10px!important}.w3-small{font-size:12px!important}.w3-medium{font-size:15px!important}.w3-large{font-size:18px!important}
@@ -1822,6 +1824,9 @@ body.dark-theme .portfolio__modal-image img {
   background: rgba(0, 0, 0, 0.75);
   transform: translateX(-50%) translateY(-2px);
 }
+
+
+
 
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 768px) {

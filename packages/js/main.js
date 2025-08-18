@@ -459,4 +459,42 @@ document.addEventListener('DOMContentLoaded', function() {
   // EVENT LISTENERS
   leftArrow.addEventListener('click', leftArrowClick);
   rightArrow.addEventListener('click', rightArrowClick);
+
+  // ================= TOUCH SWIPE =================
+  let startX = 0;
+  let isDragging = false;
+  const threshold = 50; // minimum px to trigger swipe
+
+  const slideshow = document.querySelector('.slideshowContainer');
+
+  slideshow.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  });
+
+  slideshow.addEventListener('touchmove', (e) => {
+    if (isDragging) {
+      e.preventDefault(); // Prevent page scroll
+    }
+  }, { passive: false });
+
+  slideshow.addEventListener('touchend', (e) => {
+    if (!isDragging) return;
+    const endX = e.changedTouches[0].clientX;
+    const diffX = endX - startX;
+
+    if (diffX > threshold) leftArrowClick();
+    else if (diffX < -threshold) rightArrowClick();
+
+    isDragging = false;
+    startX = 0;
+  });
+
+  // ================= MOUSE WHEEL =================
+  slideshow.addEventListener('wheel', (e) => {
+    e.preventDefault(); // prevent vertical page scroll
+    if (e.deltaY < 0) leftArrowClick();  // scroll up
+    else if (e.deltaY > 0) rightArrowClick(); // scroll down
+  }, { passive: false });
+
 });
