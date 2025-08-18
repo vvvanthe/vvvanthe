@@ -1883,20 +1883,43 @@ body.dark-theme .portfolio__modal-image img {
     bottom: -1.5rem;
   }
 
-  .qualification__tabs {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0.8rem;
-    margin-bottom: 1.5rem;
-  }
-
-  /* Timeline grid adjustment */
   .qualification__data {
+    display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1rem;
   }
 
-  /* Titles and subtitles smaller */
+  /* Center timeline column */
+  .qualification__data > div:nth-child(2) {
+    position: relative;
+    width: 2px; /* line width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Full height line */
+  .qualification__line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* center in column */
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: var(--first-color);
+    z-index: 1;
+  }
+
+  /* Circles centered on line */
+  .qualification__rounder {
+    position: relative; /* so it's above line */
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    margin: 0.25rem 0;
+  }
+
+  /* Text adjustments */
   .qualification__title {
     font-size: 1rem;
   }
@@ -1904,28 +1927,6 @@ body.dark-theme .portfolio__modal-image img {
   .qualification__subtitle,
   .qualification__calendar {
     font-size: 0.85rem;
-  }
-
-  /* Circle smaller */
-  .qualification__rounder {
-    width: 10px;
-    height: 10px;
-  }
-
-  /* Line - remove transform and align under circle */
-  .qualification__line {
-    width: 2px;
-    height: 100%;
-    transform: none; /* remove previous offsets */
-    margin: 0; /* ensure no extra spacing */
-  }
-
-  /* Center the timeline column */
-  .qualification__data > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* circle and line vertically aligned */
-    position: relative;
   }
   
 }
