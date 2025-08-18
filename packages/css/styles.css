@@ -1792,3 +1792,43 @@ body.dark-theme .portfolio__modal-image img {
   background: rgba(0, 0, 0, 0.75);
   transform: translateX(-50%) translateY(-2px);
 }
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 768px) {
+
+  .slideshowContainer {
+    height: 300px; /* reduce height for smaller screens */
+    margin: 30px 0 50px;
+  }
+
+  .slideshowArrow {
+    font-size: 4em; /* smaller arrows */
+  }
+
+  #leftArrow {
+    left: 3%;
+  }
+
+  #rightArrow {
+    right: 3%;
+  }
+
+  .slideshowCircles {
+    bottom: 3%; /* slightly higher for smaller screens */
+    gap: 4px;   /* maintain spacing but adjust for smaller screen */
+  }
+
+  .circle {
+    width: 12px;   /* smaller circles */
+    height: 12px;
+    border-width: 1.5px;
+    margin: 0 2px;
+  }
+
+  .caption {
+    bottom: 8%;       /* keep above circles */
+    max-width: 90%;   /* slightly wider for smaller screens */
+    font-size: 14px;  /* smaller font */
+    padding: 8px 16px;
+  }
+}
