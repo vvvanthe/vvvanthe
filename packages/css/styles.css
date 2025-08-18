@@ -1831,4 +1831,25 @@ body.dark-theme .portfolio__modal-image img {
     font-size: 14px;  /* smaller font */
     padding: 8px 16px;
   }
+
+  .portfolio__img {
+    max-width: 200px;
+  }
+
+  .portfolio__title {
+    font-size: 1.1rem;
+  }
+
+  .portfolio__description {
+    font-size: 0.9rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none; /* hide arrows on mobile */
+  }
+
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -1.5rem;
+  }
 }
