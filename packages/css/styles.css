@@ -1887,6 +1887,23 @@ body.dark-theme .portfolio__modal-image img {
 /* MOBILE RESPONSIVE */
 @media screen and (max-width: 768px) {
 
+  .skills__badges {
+    justify-content: right;  /* center align badges */
+    gap: 0.75rem;             /* add more spacing between badges */
+  }
+
+  .skill-badge {
+    padding: 0.5rem 0.9rem;   /* larger tap targets */
+    font-size: 0.9rem;        /* slightly bigger text */
+    border-radius: 0.6rem;
+  }
+
+
+
+  .services__button{
+    margin-bottom: 2rem;
+  }
+
   .about__container {
     grid-template-columns: 1fr; /* 1 column */
     row-gap: 2rem;              /* spacing between image and content */
