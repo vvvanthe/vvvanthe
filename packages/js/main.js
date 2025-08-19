@@ -416,7 +416,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const diffY = touch.clientY - startY;
 
     if (Math.abs(diffX) > Math.abs(diffY)) {
-      e.preventDefault();
+      if (e.cancelable) {
+        e.preventDefault();
+      }
     }
   }, { passive: false });
 
