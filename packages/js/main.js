@@ -244,7 +244,10 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      const mailtoLink = `mailto:vanthe.le96@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      const encodedEmail = "dmFudGhlLmxlOTZAZ21haWwuY29t"; // vanthe.le96@gmail.com
+      const decodedEmail = atob(encodedEmail);
+      
+      const mailtoLink = `mailto:${decodedEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\n\n${message}`
       )}`;
 
