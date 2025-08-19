@@ -496,7 +496,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Decode & apply
   const phoneEl = document.getElementById("phone");
-  const emailEl = document.getElementById("email");
+  const emailEl = document.getElementById("email2");
   const linkedinEl = document.getElementById("linkedin");
   const scholarEl = document.getElementById("scholar");
   const githubEl = document.getElementById("github");
