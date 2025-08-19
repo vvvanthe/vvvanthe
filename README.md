@@ -48,12 +48,10 @@ Check out some of my recent research projects: [portfolio](https://vvvanthe.gith
 
 ## 📫 How to reach me
 
-- 🔗 [LinkedIn](https://www.linkedin.com/in/thevanle//)  
-- 🧑‍🔬 [Google Scholar](https://scholar.google.com/citations?user=k8nLINYAAAAJ&hl=vi)
-
+- 🔗 [LinkedIn](https://www.linkedin.com/in/thevanle//)
 ---
 
 
 
-Thanks for visiting! Feel free to explore my repositories, open issues, or connect for collaboration opportunities.
+Thanks for visiting! 
 
