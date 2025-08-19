@@ -2053,6 +2053,13 @@ body.dark-theme .portfolio__modal-image img {
     align-items: center;
   }
 
+  .footer__copy {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    color: var(--text-color-lighter);
+    margin-top: var(--mb-3);
+  }
+
 
   
 }
