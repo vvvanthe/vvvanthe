@@ -514,7 +514,7 @@ function getCssVar(varName) {
 
 // Render canvas with theme color and default font
 function renderTextCanvas(id, encodedText) {
-  const text = atob(encodedText); // decode Base64
+  const text = encodedText; // decode Base64
   const canvas = document.getElementById(id);
   const ctx = canvas.getContext("2d");
 
@@ -533,15 +533,15 @@ function renderTextCanvas(id, encodedText) {
 }
 
 // Base64-encoded info
-renderTextCanvas("phoneCanvas", "KCs4MikgMTAyMTU1NjY2OQ=="); // phone
-renderTextCanvas("emailCanvas", "dmFudGhlLmxlOTZAZ21haWwuY29t"); // email
-renderTextCanvas("locationCanvas", "U2VvdWwsIFNvdXRoIFJlbWFu"); // Seoul, South Korea
+renderTextCanvas("phoneCanvas",  atob("KCs4MikgMTAyMTU1NjY2OQ==")); // phone
+renderTextCanvas("emailCanvas", atob("dmFudGhlLmxlOTZAZ21haWwuY29t")); // email
+renderTextCanvas("locationCanvas", "Seoul, South Korea"); // Seoul, South Korea
 
 // Re-render if theme changes
 const observer = new MutationObserver(() => {
-  renderTextCanvas("phoneCanvas", "KCs4MikgMTAyMTU1NjY2OQ==");
-  renderTextCanvas("emailCanvas", "dmFudGhlLmxlOTZAZ21haWwuY29t");
-  renderTextCanvas("locationCanvas", "U2VvdWwsIFNvdXRoIEtvcmVh");
+  renderTextCanvas("phoneCanvas", atob("KCs4MikgMTAyMTU1NjY2OQ=="));
+  renderTextCanvas("emailCanvas", atob("dmFudGhlLmxlOTZAZ21haWwuY29t"));
+  renderTextCanvas("locationCanvas",  "Seoul, South Korea");
 });
 observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
