@@ -475,3 +475,27 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+
+
+// Update information 
+
+const encodedData = {
+  phone:  "KCs4MikgMTAyMTU1NjY2OQ==", 
+  email: "dmFudGhlLmxlOTZAZ21haWwuY29t", 
+  linkedin: "aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3RoZXZhbmxlLw==",
+  scholar: "aHR0cHM6Ly9zY2hvbGFyLmdvb2dsZS5jb20vY2l0YXRpb25zP3VzZXI9azhuTElOWUFBQUFK",
+  github: "aHR0cHM6Ly9naXRodWIuY29tL3Z2dmFudGhl",
+  facebook: "aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3Z2dmFudGhl",
+  instagram: "aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS92dnZ2YW50aGUv",
+  linkedinFooter: "aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL3RoZXZhbmxlLw=="
+};
+
+// Decode & apply
+document.getElementById("phone").innerText = atob(encodedData.phone);
+document.getElementById("email").innerText = atob(encodedData.email);
+document.getElementById("linkedin").href = atob(encodedData.linkedin);
+document.getElementById("scholar").href = atob(encodedData.scholar);
+document.getElementById("github").href = atob(encodedData.github);
+// document.getElementById("facebook").href = atob(encodedData.facebook);
+// document.getElementById("instagram").href = atob(encodedData.instagram);
+// document.getElementById("linkedin-footer").href = atob(encodedData.linkedinFooter);
