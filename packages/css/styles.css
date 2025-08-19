@@ -1910,6 +1910,13 @@ body.dark-theme .portfolio__modal-image img {
     text-align: center;         /* optional: center content on mobile */
   }
 
+
+  .contact__container{
+    grid-template-columns: 1fr; /* 1 column only */
+    row-gap: 2rem;             /* add space between image and text */
+
+  }
+
   .about__img {
     width: 100%;   /* make image responsive */
     height: auto;
