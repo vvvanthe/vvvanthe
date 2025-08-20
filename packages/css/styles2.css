@@ -1117,7 +1117,7 @@ img {
     width: 30px;
   }
 
-  .home__subtitle {
+  /* .home__subtitle {
     font-size: 24px;
   }
 
@@ -1127,7 +1127,7 @@ img {
 
   .home__button {
     font-size: 20px;
-  }
+  } */
 
   .skills__title {
     font-size: var(--normal-font-size);
@@ -1300,11 +1300,11 @@ img {
     }
 
     .services__modal-content {
-      width: 600px;
+      width: 450px;
     }
-    /* .portfolio__img {
+    .portfolio__img {
       width: 320px;
-    } */
+    }
     .portfolio__content {
       align-items: center;
     }
@@ -1872,7 +1872,6 @@ body.dark-theme .portfolio__modal-image img {
   transform: translateX(0.25rem);
 }
 
-/* MOBILE RESPONSIVE */
 @media screen and (max-width: 768px) {
 
   .skills__badges {
@@ -1885,36 +1884,6 @@ body.dark-theme .portfolio__modal-image img {
     font-size: 0.9rem;        /* slightly bigger text */
     border-radius: 0.6rem;
   }
-
-
-
-  /* .services__button{
-    margin-bottom: 2rem;
-  } */
-
-
-  .contact__container{
-    grid-template-columns: 1fr; /* 1 column only */
-    row-gap: 2rem;             /* add space between image and text */
-
-  }
-
-  .about__img {
-    width: 100%;   /* make image responsive */
-    height: auto;
-    margin: 0 auto; /* center image */
-    border-radius: 10px; /* optional: rounded corners */
-  }
-
-  .about__data {
-    text-align: left; /* keep text aligned left, or set to center if you prefer */
-  }
-
-  .portfolio__content {
-    grid-template-columns: 1fr; /* 1 column only */
-    row-gap: 2rem;             /* add space between image and text */
-  }
-
 
   .slideshowContainer {
     height: 300px; /* reduce height for smaller screens */
@@ -1952,64 +1921,6 @@ body.dark-theme .portfolio__modal-image img {
     padding: 8px 16px;
   }
 
-  /* .portfolio__img {
-    max-width: 200px;
-  } */
-
-  .portfolio__title {
-    font-size: 1.1rem;
-  }
-
-  .portfolio__description {
-    font-size: 0.9rem;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none; /* hide arrows on mobile */
-  }
-
-  .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: -1.5rem;
-  }
-
-
-  .about__img {
-    width: 150px;
-    margin: 0 auto;
-    display: block;
-  }
-
-  /* Description centered and smaller margin */
-  .about__description {
-    text-align: center;
-    margin-bottom: var(--mb-2);
-    font-size: 0.9rem;
-  }
-
-  /* Info stacked vertically instead of horizontal */
-  .about__info {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    margin-bottom: var(--mb-2);
-  }
-
-  /* Info titles and names slightly smaller */
-  .about__info-title {
-    font-size: 1.2rem;
-  }
-
-  .about__info-name {
-    font-size: 0.85rem;
-  }
-
-  /* Buttons centered and stacked if needed */
-  .about__buttons {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-  }
 
   .footer__copy {
     font-size: var(--smaller-font-size);
@@ -2018,7 +1929,4 @@ body.dark-theme .portfolio__modal-image img {
     margin-top: var(--mb-3);
   }
 
-
-  
 }
-
