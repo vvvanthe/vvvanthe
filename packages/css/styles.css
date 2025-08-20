@@ -1837,7 +1837,7 @@ body.dark-theme .portfolio__modal-image img {
   padding: 12px 20px;
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
-  font-size: 16px;
+  font-size: 1.2rem;
   line-height: 1.4;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -1974,7 +1974,7 @@ body.dark-theme .portfolio__modal-image img {
   .caption {
     bottom: 8%;       /* keep above circles */
     max-width: 90%;   /* slightly wider for smaller screens */
-    font-size: 14px;  /* smaller font */
+    font-size: 0.9rem;  /* smaller font */
     padding: 8px 16px;
   }
 
@@ -2064,9 +2064,3 @@ body.dark-theme .portfolio__modal-image img {
   
 }
 
-.no-select {
-  user-select: none; /* Standard */
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE/Edge */
-}
