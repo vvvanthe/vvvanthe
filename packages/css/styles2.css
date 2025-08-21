@@ -1529,10 +1529,10 @@ img {
 
 .close-modal_resume {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  width: 3rem;
-  height: 3rem;
+  top: 1.2rem;
+  right: 1.2rem;
+  width: 3.5rem;
+  height: 3.5rem;
   font-size: 1.8rem;
   color: #fff;
   cursor: pointer;
