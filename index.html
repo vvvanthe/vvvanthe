@@ -183,10 +183,16 @@
                             </div>
                         </div>
 
-                        <div class="about__buttons">
+                        <!-- <div class="about__buttons">
                             <a download="" href="packages/LE_VAN_THE_Resume.pdf" target="_blank" class="button button--flex">
                                 Download CV<i class="uil uil-download-alt button__icon "></i>
                             </a>
+                        </div> -->
+
+                        <div class="about__buttons">
+                          <button type="button" class="button button--flex pj__button" data-modal="modal-resume">
+                            Download CV <i class="uil  uil-download-alt button__icon"></i>
+                          </button>
                         </div>
                     </div>
                 </div>
@@ -2059,6 +2065,37 @@
         
         </div>
     </div>
+
+
+     <!--########========== CV shows===========####-->
+
+
+     <div id="modal-resume" class="modal hidden">
+      <div class="modal-content">
+          <i class="uil uil-times close-modal"></i>
+         
+          <div style="position: relative; width: 100%; max-width: 100%; margin: auto;">
+            <iframe 
+              src="packages/LE_VAN_THE_Resume.pdf#page=1&view=FitH" 
+              style="width:100%; aspect-ratio: 1 / 1.414; border:none;" 
+              title="resume">
+            </iframe>
+          
+            <div style="text-align:center; margin-top: 0.5rem;">
+              <a href="packages/LE_VAN_THE_Resume.pdf" download class="button button--flex">
+                Save Resume <i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="about__buttons">
+            <a download="" href="packages/LE_VAN_THE_Resume.pdf" target="_blank" class="button button--flex">
+                Download CV<i class="uil uil-download-alt button__icon "></i>
+            </a>
+        </div> -->
+      
+      </div>
+  </div>
     
       
    
