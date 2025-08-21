@@ -2069,33 +2069,25 @@
 
      <!--########========== CV shows===========####-->
 
-
-     <div id="modal-resume" class="modal hidden">
-      <div class="modal-content">
-          <i class="uil uil-times close-modal"></i>
-         
-          <div style="position: relative; width: 100%; max-width: 100%; margin: auto;">
-            <iframe 
-              src="packages/LE_VAN_THE_Resume.pdf#page=1&view=FitH" 
-              style="width:100%; aspect-ratio: 1 / 1.414; border:none;" 
-              title="resume">
-            </iframe>
-          
-            <div style="text-align:center; margin-top: 0.5rem;">
-              <a href="packages/LE_VAN_THE_Resume.pdf" download class="button button--flex">
-                Save Resume <i class="uil uil-download-alt button__icon"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- <div class="about__buttons">
-            <a download="" href="packages/LE_VAN_THE_Resume.pdf" target="_blank" class="button button--flex">
-                Download CV<i class="uil uil-download-alt button__icon "></i>
-            </a>
-        </div> -->
-      
+     <div id="modal-resume" class="modal_resume hidden">
+      <div class="modal_resume-content" style="position: relative; width: 100%; height: 100%;">
+        <i class="uil uil-times close-modal_resume"></i>
+    
+        <!-- PDF iframe -->
+        <iframe 
+          src="packages/LE_VAN_THE_Resume.pdf" 
+          style="width:100%; height:100%; border:none;" 
+          title="resume">
+        </iframe>
+    
+        <!-- Download button -->
+        <div style="position:absolute; bottom:1rem; width:100%; text-align:center;">
+          <a href="packages/LE_VAN_THE_Resume.pdf" download target="_blank" class="button button--flex">
+            Save Resume <i class="uil uil-download-alt button__icon"></i>
+          </a>
+        </div>
       </div>
-  </div>
+    </div>
     
       
    

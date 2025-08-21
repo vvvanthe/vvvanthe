@@ -326,6 +326,26 @@ pjModalCloses.forEach((closeBtn) => {
   });
 });
 
+const modalResume = document.getElementById('modal-resume');
+const closeBtn = modalResume.querySelector('.close-modal_resume');
+
+// Function to close modal when clicking X
+closeBtn.addEventListener('click', () => {
+  modalResume.classList.add('hidden');
+});
+
+// Optional: close modal when clicking outside content
+modalResume.addEventListener('click', (e) => {
+  if (e.target === modalResume) {
+    modalResume.classList.add('hidden');
+  }
+});
+
+// Example: function to open modal (call this from a button)
+function openResumeModal() {
+  modalResume.classList.remove('hidden');
+}
+
 
 // IMAGE SLIDES & CIRCLES ARRAYS, & COUNTER
 document.addEventListener('DOMContentLoaded', function() {
@@ -550,3 +570,4 @@ const observer = new MutationObserver(() => {
 observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
 });
+
