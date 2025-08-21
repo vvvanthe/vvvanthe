@@ -326,25 +326,30 @@ pjModalCloses.forEach((closeBtn) => {
   });
 });
 
-const modalResume = document.getElementById('modal-resume');
-const closeBtn = modalResume.querySelector('.close-modal_resume');
+const modal = document.getElementById('modal-resume');
+const closeBtn = document.querySelector('.close-modal_resume');
 
-// Function to close modal when clicking X
-closeBtn.addEventListener('click', () => {
-  modalResume.classList.add('hidden');
-});
+// Function to open modal
+function openModal() {
+  modal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden'; // disable background scroll
+}
 
-// Optional: close modal when clicking outside content
-modalResume.addEventListener('click', (e) => {
-  if (e.target === modalResume) {
-    modalResume.classList.add('hidden');
+// Function to close modal
+function closeModal() {
+  modal.classList.add('hidden');
+  document.body.style.overflow = ''; // restore scroll
+}
+
+// Close button click
+closeBtn.addEventListener('click', closeModal);
+
+// Optional: close when clicking outside modal content
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    closeModal();
   }
 });
-
-// Example: function to open modal (call this from a button)
-function openResumeModal() {
-  modalResume.classList.remove('hidden');
-}
 
 
 // IMAGE SLIDES & CIRCLES ARRAYS, & COUNTER
