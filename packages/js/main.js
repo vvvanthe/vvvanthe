@@ -108,6 +108,8 @@ document.addEventListener("click", (e) => {
 
 
 
+
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper(".portfolio__container", {
   cssMode: true,
@@ -326,30 +328,21 @@ pjModalCloses.forEach((closeBtn) => {
   });
 });
 
+
 const modal = document.getElementById('modal-resume');
-const closeBtn = document.querySelector('.close-modal_resume');
-
-// Function to open modal
-function openModal() {
+const openModal = () => {
   modal.classList.remove('hidden');
-  document.body.style.overflow = 'hidden'; // disable background scroll
-}
+  document.body.style.overflow = 'hidden'; // disable page scroll
+};
 
-// Function to close modal
-function closeModal() {
+const closeModal = () => {
   modal.classList.add('hidden');
-  document.body.style.overflow = ''; // restore scroll
-}
+  document.body.style.overflow = ''; // re-enable page scroll
+};
 
-// Close button click
-closeBtn.addEventListener('click', closeModal);
+// Close button
+document.querySelector('.close-modal_resume').addEventListener('click', closeModal);
 
-// Optional: close when clicking outside modal content
-modal.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    closeModal();
-  }
-});
 
 
 // IMAGE SLIDES & CIRCLES ARRAYS, & COUNTER
