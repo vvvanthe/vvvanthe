@@ -360,7 +360,8 @@ document.addEventListener('DOMContentLoaded', function() {
     "Automotive World 2024, Tokyo, Japan",
     "Speech in IPUT 2024, Tokyo, Japan",
     "ICIP 2024, Abu Dhabi, UAE",
-    "Dissertation Defense 2025, Seoul, South Korea"
+    // "Dissertation Defense 2025, Seoul, South Korea"
+    "Graduation Ceremony 2025, Seoul, South Korea"
   ];
 
   // Caption element
