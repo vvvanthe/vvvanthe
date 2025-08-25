@@ -2009,6 +2009,14 @@ body.dark-theme .portfolio__modal-image img {
   padding: 1rem;
 }
 
+.cert-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+
+}
+
 .award-icon {
   color: gold;
   font-size: 1.5rem;
