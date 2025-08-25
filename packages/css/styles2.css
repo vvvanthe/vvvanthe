@@ -2010,17 +2010,8 @@ body.dark-theme .portfolio__modal-image img {
 }
 
 .cert-link {
-  display: flex;
-  align-items: center;
   text-decoration: none;
-  color: inherit;
-
-}
-
-.award-icon {
-  color: gold;
-  font-size: 1.5rem;
-  margin-right: 0.75rem;
+  margin-left: 0.3rem;
 }
 
 .click-hint {
@@ -2029,3 +2020,10 @@ body.dark-theme .portfolio__modal-image img {
   color: var(--first-color-alt);
   margin-left: 0.3rem;
 }
+
+.award-icon {
+  color: gold;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
