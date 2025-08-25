@@ -1985,3 +1985,39 @@ body.dark-theme .portfolio__modal-image img {
   }
 
 }
+
+/* Highlight award list item */
+.award-item {
+  background: rgba(255, 215, 0, 0.1); /* gold tint */
+  border-left: 4px solid gold;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.award-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: rgba(255, 215, 0, 0.2);
+}
+
+.award-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+}
+
+.award-icon {
+  color: gold;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.click-hint {
+  font-style: italic;
+  font-size: 0.9em;
+  color: var(--first-color-alt);
+  margin-left: 0.3rem;
+}

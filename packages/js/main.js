@@ -306,6 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
 //   });
 // });
 
+//###################### PROJECT MODAL #######################
 
 const pjModalBtns = document.querySelectorAll(".pj__button");
 const pjModalCloses = document.querySelectorAll(".close-modal");
@@ -328,6 +329,19 @@ pjModalCloses.forEach((closeBtn) => {
   });
 });
 
+// Optional: click outside modal-content to close
+document.addEventListener("click", (e) => {
+  const openModals = document.querySelectorAll(".modal");
+  openModals.forEach((modal) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+});
+
+
+//###################### RESUME MODAL #######################
+
 
 const modal = document.getElementById('modal-resume');
 const openModal = () => {
@@ -342,6 +356,19 @@ const closeModal = () => {
 
 // Close button
 document.querySelector('.close-modal_resume').addEventListener('click', closeModal);
+
+// Optional: click outside modal-content to close
+document.addEventListener("click", (e) => {
+  const openModals = document.querySelectorAll(".modal_resume");
+  openModals.forEach((modal) => {
+    if (e.target === modal) {
+      modal.classList.add('hidden');
+    }
+  });
+});
+
+
+
 
 
 
