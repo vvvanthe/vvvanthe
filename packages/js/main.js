@@ -110,46 +110,7 @@ document.addEventListener("click", (e) => {
 
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper(".portfolio__container", {
-  cssMode: true,
-  loop: true,
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  /* mousewheel: true,
-  keyboard: true, */
-});
-
-/*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper(".testimonial__container", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 48,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-
-  breakpoints: {
-    568: {
-      slidesPerView: 2,
-    },
-  },
-
-  /* mousewheel: true,
-  keyboard: true, */
-});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll("section[id]");
@@ -618,7 +579,7 @@ observer.observe(document.body, { attributes: true, attributeFilter: ['class'] }
       io.observe(el);
     });
 
-  add(".section__title, .section__subtitle, .home__data, .home__img, .about__img, .about__data, .publications__list .publications__list li, .portfolio__container, .slideshowContainer, .contact__container > *");
+  add(".section__title, .section__subtitle, .home__data, .home__img, .about__img, .about__data, .publications__list .publications__list li, .projects__grid, .slideshowContainer, .contact__container > *");
   // these hold position:fixed modals: fade only, never transform
   add(".qualification__data, .skills__content", true);
 })();

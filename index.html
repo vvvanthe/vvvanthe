@@ -8,11 +8,10 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="./packages/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="./packages/css/styles2.css?v=20261126">
-        <link rel="stylesheet" href="./packages/css/polish.css?v=20261126">
+        <link rel="stylesheet" href="./packages/css/styles2.css?v=20261127">
+        <link rel="stylesheet" href="./packages/css/polish.css?v=20261127">
 
         
 
@@ -1266,345 +1265,220 @@
        
         </div> -->
         <!-- </section> -->
-        <!--==================== PORTFOLIO ====================-->
-        <section class="portfolio section" id="cvproject">
+        <!--==================== RESEARCH PROJECTS ====================-->
+        <section class="projects section" id="cvproject">
+          <h2 class="section__title">Research Projects</h2>
+          <span class="section__subtitle">Selected Works</span>
 
-            <h2 class="section__title">Research Projects</h2>
-            <span class="section__subtitle">Most Recent Works</span>
+          <div class="projects__grid container">
 
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-        <!--==================== FoMo ====================-->
-        <div class="portfolio__content grid swiper-slide">
-          <img src="./packages/images/FoMo/fig.png" alt="FoMo overview: a tabular encoder and a text encoder aligned into one embedding space" class="portfolio__img">
-
-          <div class="portfolio_">
-              <h3 class="portfolio__title"> <strong>FoMo:</strong> Language-Aligned Learning for Zero-Shot and Few-Shot Tabular Inference (IEEE ICDM 2026) </h3>
-
-              <ul class="portfolio__description-list">
-                  <li>🔗 Reformulates tabular learning as semantic matching: a tabular encoder and a text encoder are aligned contrastively using LLM-written row descriptions.</li>
-                  <li>🎯 A new prediction task is just a piece of text, enabling zero-shot inference with no task-specific retraining and no LLM at inference time.</li>
-                  <li>⚖️ FoMo-Pairwise turns language-based ranking signals into pairwise objectives for few-shot classification and regression on frozen embeddings.</li>
-                  <li>🚀 On LendingClub, FoMo with zero labels beats every baseline given 32 labelled examples per class (AUC 0.638 vs 0.624 on loan default).</li>
-              </ul>
-              <br>
-              <strong>Tech stack:</strong> PyTorch, Contrastive Learning (InfoNCE), Sentence Transformers, Qwen3-8B
-
-              <h3 class="portfolio__title"></h3>
-
-              <div class="portfolio__buttons">
-                <a href="https://github.com/MoMo-FoMo/FoMo" class="button button--flex pj__button" target="_blank" rel="noopener">
-                  Code on GitHub <i class="uil uil-github-alt button__icon"></i>
-                </a>
+            <article class="project-card project-card--featured">
+              <div class="project-card__media">
+                <img src="./packages/images/FoMo/fig.png" alt="FoMo overview: a tabular encoder and a text encoder aligned into one embedding space" loading="lazy">
               </div>
-          </div>
-      </div>
-
-        <!--==================== PORTFOLIO 1 ====================-->
-
-        
-        <div class="portfolio__content grid swiper-slide">
-          <img src="./packages/images/CV/3/1.png" alt="SHDRN Project Cover" class="portfolio__img"> 
-      
-          <div class="portfolio_">
-              <h3 class="portfolio__title"> <strong>Dissertation:</strong> Deep learning based specular highlight detection and removal (SHDRN) </h3>
-      
-              <ul class="portfolio__description-list">
-                  <li>💡 Proposes a two-stage SHDRN framework for accurate specular highlight detection and removal in natural images.</li>
-                  <li>🎯 Integrates VAUnet for precise specular mask generation and QformerSHR for high-quality removal.</li>
-                  <li>🌀 QformerSHR leverages Quaternion representation with DSQConv and QTB for efficient global context learning.</li>
-                  <li>🚀 Outperforms state-of-the-art CNN-based methods in visual quality and quantitative metrics.</li>
-              </ul>
-              <br>
-              <strong>Tech stack:</strong> PyTorch, Python, Transformer, Quaternion Networks, Image Restoration
-      
-              <h3 class="portfolio__title"></h3>
-      
-              <div class="portfolio__buttons">
-                <button type="" class="button button--flex pj__button" data-modal="modal-cv-2">
-                  More Details <i class="uil uil-arrow-right button__icon"></i>
-                </button>
-              </div>
-      
-              <!-- <a href="https://youtu.be/your-demo-link" class="button button--flex button--small portfolio__button" target="_blank">
-                  Demo
-                  <i class="uil uil-play button__icon"></i>
-              </a> -->
-          </div>
-      </div>
-
- <!--==================== PORTFOLIO 2 ====================-->
-        <div class="portfolio__content grid swiper-slide">
-            <img src="./packages/images/CV/1/1.jpg" alt="" class="portfolio__img">
-          
-            <div class="portfolio_">
-              <h3 class="portfolio__title"> Surface Defect Detection Using Distributed Features (DF-SDD)   </h3>
-          
-              <ul class="portfolio__description-list">
-                <li>🧠 Proposes a novel low-complexity surface defect detection network (DF-SDD).</li>
-                <li>🧩 Introduces Distributed Convolution (DConv) and Distributed Depthwise Convolution (DDWConv).</li>
-                <li>🌐 Combines multi-scale features with Spatial Attention Gate (SAG) for enhanced fusion.</li>
-                <li>📈 Outperforms state-of-the-art networks (YOLOv8, Faster R-CNN, etc.) in mAP and complexity.</li>
-              </ul>
-              <br>
-              <strong>Tech stack:</strong> PyTorch, Python, Object Detection, Network Design
-          
-              <h3 class="portfolio__title"></h3>
-
-
-              <div class="portfolio__buttons">
-                <button type="" class="button button--flex pj__button" data-modal="modal-cv-1">
-                  More Details <i class="uil uil-arrow-right button__icon"></i>
-                </button>
-              </div>
-
-                  <!-- <a href="https://youtu.be/1ggh-2Fd3Hc" class="button button--flex button--small portfolio__button" target="_blank">
-              Demo
-              <i class="uil uil-play button__icon"></i>
-          </a> -->
-          <h3 class="portfolio__title"></h3>
-          
-             
-            </div>
-          </div>
-
-        
-            <!--==================== PORTFOLIO 3 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/CV/2/1.jpg" alt="" class="portfolio__img"> 
-              
-                <div class="portfolio_">
-                  <h3 class="portfolio__title">Specular Detection and Rendering for Immersive Multimedia</h3>
-              
-                  <ul class="portfolio__description-list">
-                    <li>🧠 Proposes VAUnet: a novel deep learning model with VAE and attention for specular highlight detection.</li>
-                    <li>🧩 Introduces a hybrid loss (dice + cross-entropy + KL divergence) for better mask accuracy.</li>
-                    <li>🎯 Achieves superior accuracy specular detection compared to existing methods (SHDnet, JSHDR, etc.).</li>
-                    <li>📦 Applies detection masks to MPEG-I rendering to enhance realism in immersive video.</li>
-                    
-                  </ul>
-                  <br>
-                  <strong>Tech stack:</strong> PyTorch, Python, MPEG-I, C++, Segmentation, Network Design
-              
-                  <h3 class="portfolio__title"></h3>
-              
-                  <div class="portfolio__buttons">
-                    <button type="" class="button button--flex pj__button" data-modal="modal-cv-3">
-                      More Details <i class="uil uil-arrow-right button__icon"></i>
-                    </button>
-                  </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__tag">IEEE ICDM 2026</span>
+                  <span>Tabular ML · LLMs</span>
+                </div>
+                <h3 class="project-card__title">FoMo: Language-Aligned Learning for Zero-Shot and Few-Shot Tabular Inference</h3>
+                <p class="project-card__summary">Reformulates tabular learning as semantic matching: a tabular encoder and a text encoder are aligned contrastively using LLM-written row descriptions.</p>
+                <ul class="project-card__points">
+                  <li>A new prediction task is just a piece of text: zero-shot inference with no retraining and no LLM at inference time.</li>
+                  <li>FoMo-Pairwise turns language-based ranking signals into few-shot objectives on frozen embeddings.</li>
+                  <li>With zero labels, beats every baseline given 32 labelled examples per class on LendingClub (AUC 0.638 vs 0.624).</li>
+                </ul>
+                <ul class="project-card__stack">
+                  <li>PyTorch</li><li>Contrastive Learning</li><li>Sentence Transformers</li><li>Qwen3-8B</li>
+                </ul>
+                <div class="project-card__actions">
+                  <a href="https://github.com/MoMo-FoMo/FoMo" class="project-card__btn project-card__btn--primary" target="_blank" rel="noopener">
+                    <i class="uil uil-github-alt"></i> Code on GitHub
+                  </a>
                 </div>
               </div>
-              
-              
+            </article>
 
-          
-            
-
-
-             <!--==================== PORTFOLIO 4 ====================-->
-        
-             <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/CV/4/1.png" alt="MRI Super-Resolution" class="portfolio__img">
-              
-                <div class="portfolio_">
-                  <h3 class="portfolio__title">Lightweight 3D CNN for Brain MRI Super-Resolution</h3>
-              
-                  <ul class="portfolio__description-list">
-                    <li>🧠 Proposes a lightweight 3D convolutional network for high-quality brain MRI super-resolution.</li>
-                    <li>⚡ Designed with extraction, compression, and reconstruction modules for efficiency.</li>
-                    <li>📉 Reduces network parameters for real-time feasibility in MR scanners.</li>
-                    <li>📊 Outperforms conventional networks in PSNR/SSIM while lowering complexity.</li>
-                  </ul>
-                  <br>
-                  <strong>Tech stack:</strong> PyTorch, Python, 3D CNN, Medical Imaging, MRI Processing
-              
-                  <h3 class="portfolio__title"></h3>
-              
-                  
-
-                  <div class="portfolio__buttons">
-                    <button type="" class="button button--flex pj__button" data-modal="modal-cv-4">
-                      More Details <i class="uil uil-arrow-right button__icon"></i>
-                    </button>
-                  </div>
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="./packages/images/CV/3/1.png" alt="SHDRN framework overview" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__tag">Ph.D. Dissertation</span>
+                  <span>Image Restoration</span>
+                </div>
+                <h3 class="project-card__title">SHDRN: Deep Specular Highlight Detection and Removal</h3>
+                <p class="project-card__summary">A two-stage framework: VAUnet generates precise specular masks, then QformerSHR removes highlights with quaternion-based global context learning.</p>
+                <ul class="project-card__stack">
+                  <li>PyTorch</li><li>Transformer</li><li>Quaternion Networks</li>
+                </ul>
+                <div class="project-card__actions">
+                  <button type="button" class="project-card__btn pj__button" data-modal="modal-cv-2">
+                    Details <i class="uil uil-arrow-right"></i>
+                  </button>
                 </div>
               </div>
-              
+            </article>
 
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="./packages/images/CV/1/1.jpg" alt="DF-SDD surface defect detection results" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__tag">Object Detection</span>
+                  <span>Industrial AI</span>
+                </div>
+                <h3 class="project-card__title">DF-SDD: Surface Defect Detection with Distributed Features</h3>
+                <p class="project-card__summary">A low-complexity detector built on Distributed (Depthwise) Convolutions and a Spatial Attention Gate; beats YOLOv8 and Faster R-CNN on mAP at lower cost.</p>
+                <ul class="project-card__stack">
+                  <li>PyTorch</li><li>Object Detection</li><li>Network Design</li>
+                </ul>
+                <div class="project-card__actions">
+                  <button type="button" class="project-card__btn pj__button" data-modal="modal-cv-1">
+                    Details <i class="uil uil-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
 
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="./packages/images/CV/2/1.jpg" alt="Specular detection applied to MPEG-I rendering" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__tag">Immersive Media</span>
+                  <span>Segmentation</span>
+                </div>
+                <h3 class="project-card__title">Specular Detection and Rendering for Immersive Multimedia</h3>
+                <p class="project-card__summary">VAUnet (VAE + attention, hybrid dice/CE/KL loss) detects specular highlights; its masks improve realism in MPEG-I immersive video rendering.</p>
+                <ul class="project-card__stack">
+                  <li>PyTorch</li><li>MPEG-I</li><li>C++</li>
+                </ul>
+                <div class="project-card__actions">
+                  <button type="button" class="project-card__btn pj__button" data-modal="modal-cv-3">
+                    Details <i class="uil uil-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
 
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="./packages/images/CV/4/1.png" alt="Brain MRI super-resolution network" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__tag">Medical Imaging</span>
+                  <span>Super-Resolution</span>
+                </div>
+                <h3 class="project-card__title">Lightweight 3D CNN for Brain MRI Super-Resolution</h3>
+                <p class="project-card__summary">Extraction, compression and reconstruction modules cut parameters for real-time use in MR scanners while improving PSNR/SSIM.</p>
+                <ul class="project-card__stack">
+                  <li>PyTorch</li><li>3D CNN</li><li>MRI</li>
+                </ul>
+                <div class="project-card__actions">
+                  <button type="button" class="project-card__btn pj__button" data-modal="modal-cv-4">
+                    Details <i class="uil uil-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
 
-              
-
-            
-
-            <!-- add arrows-->
-            </div>
-            <div class="swiper-button-next">
-                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-            </div>
-
-            <div class="swiper-button-prev">
-                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-            </div>
-
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            
-        
-        </div>
-
+          </div>
         </section>
 
-        
+        <!--==================== LLM PROJECTS ====================-->
+        <section class="projects section" id="llmproject">
+          <h2 class="section__title">LLM Projects</h2>
+          <span class="section__subtitle">Applied AI Systems</span>
 
-         
-         
-        
-         
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="portfolio section" id="llmproject">
+          <div class="projects__grid container">
 
-            <h2 class="section__title">LLM Projects</h2>
-            <span class="section__subtitle">Most Recent Works</span>
-
-            <div class="portfolio__container container swiper-container">
-                <div class="swiper-wrapper">
-        <!--==================== PORTFOLIO 1 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/LLM/AI_interview.png" alt="" class="portfolio__img">
-
-                <div class="portfolio_">
-                    <h3 class="portfolio__title">AI Interview: Transforming the Future of Recruitment   </h3>
-                    <p class="portfolio__description">
-                        <ul class="portfolio__description-list">
-                            <li>📄 Automates question generation based on job descriptions (JDs) using large language models (LLMs).</li>
-                            <li>🗣️ Integrates large language models (LLMs) to conducts natural voice interviews with dynamic Q&A.</li>
-                            <li>🌐 Web UI for data management,job description input,managing data, and real-time interviewing.</li>
-                            <li>📊 Provides unbiased, consistent evaluations and candidate ranking based on multiple criteria.</li>
-                            <li>🗃️ Stores candidate data, transcriptions, and reports in an integrated system.</li>
-                          </ul>
-                      </p>
-                      <br>
-                            <strong>Tech stack:</strong> Svelte, TailwindCSS (frontend); FastAPI (backend)
-                            
-                      <h3 class="portfolio__title"></h3>
-
-
-   
-
-                    <div class="portfolio__buttons">
-                      <button type="button" class="pj__button" data-modal="modal-llm-1">
-                        More Details <i class="uil uil-arrow-right button__icon"></i>
-                      </button>
-                    
-                      <a href="https://youtu.be/1ggh-2Fd3Hc" class="button portfolio__button" target="_blank">
-                        Demo <i class="uil uil-play button__icon"></i>
-                      </a>
-                    </div>
-
-                    <h3 class="portfolio__title"></h3>
-                </div>
-            </div>
-
-            <!--==================== PORTFOLIO 2 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-                <img src="./packages/images/LLM/2/2.png" alt="" class="portfolio__img">
-              
-                <div class="portfolio_">
-                  <h3 class="portfolio__title">CV Screening: Automating Candidate Evaluation</h3>
-                  <p class="portfolio__description">
-                    <ul class="portfolio__description-list">
-                      <li>📄 Extracts and standardizes information from diverse CV formats using LLMs and VLMs.</li>
-                      <li>🛠️ Utilizes models such as DeepSeek, Owen, OpenAI API, LlamaIndex, and OllamaOCR for accurate data extraction.</li>
-                      <li>📊 Scores and ranks candidates based on customizable criteria including education, skills, experience, and roles.</li>
-                      <li>🌐 Features a web interface for uploading CVs and job descriptions, managing data, and viewing evaluation results.</li>
-                      <li>⚙️ Stores candidate data in database to simplify management and integration.</li>
-                    </ul>
-                  </p>
-                  <br>
-                  <strong>Tech stack:</strong> Svelte, TailwindCSS (frontend); FastAPI (backend)
-                            
-                      <h3 class="portfolio__title"></h3>
-
-                        <div class="portfolio__buttons">
-                          <button type="button" class="pj__button" data-modal="modal-llm-2">
-                            More Details <i class="uil uil-arrow-right button__icon"></i>
-                          </button>
-                        
-                          <a href="https://youtu.be/ET7dJ9QvVis" class="button portfolio__button" target="_blank">
-                            Demo <i class="uil uil-play button__icon"></i>
-                          </a>
-                        </div>
-                        
-                      <h3 class="portfolio__title"></h3>
-                </div>
-            </div>
-              
-        
-              
-              <!-- Modal -->
-              
-            <!--==================== PORTFOLIO 3 ====================-->
-        
-            <div class="portfolio__content grid swiper-slide">
-              <img src="./packages/images/LLM/3/1.png" alt="" class="portfolio__img">
-          
-              <div class="portfolio_">
-                  <h3 class="portfolio__title">Multimodal RAG: Intelligent Document Understanding</h3>
-                  <p class="portfolio__description">
-                      <ul class="portfolio__description-list">
-                        <li>📄 Automatically extracts and summarizes text, tables, and images from complex documents, retaining only content-relevant images using VLMs and LLMs.</li>
-                        <li>🗣️ Uses LLMs to answer user queries with context-aware reasoning.</li>
-                        <li>🔍 Leverages MultiVectorRetriever to efficiently search across multiple embeddings (text, tables, and image captions) for precise retrieval.</li>
-                        <li>🌐 Provides a Web UI for uploading PDFs, viewing extraction results, and interacting via a chat interface.</li>
-                      </ul>
-                  </p>
-                  <br>
-                  <strong>Tech stack:</strong> Svelte, TailwindCSS (frontend); FastAPI, LangChain, Ollama (backend)
-                  
-                  <h3 class="portfolio__title"></h3>
-
-
-                  <div class="portfolio__buttons">
-                    <button type="button" class="pj__button" data-modal="modal-llm-3">
-                      More Details <i class="uil uil-arrow-right button__icon"></i>
-                    </button>
-                  
-                    <a href="https://youtu.be/qUarOhdrSwY" class="button portfolio__button" target="_blank">
-                      Demo <i class="uil uil-play button__icon"></i>
-                    </a>
-                  </div>
-                        
-                    <h3 class="portfolio__title"></h3>
+            <article class="project-card project-card--featured">
+              <div class="project-card__media">
+                <img src="./packages/images/LLM/AI_interview.png" alt="AI Interview web interface" loading="lazy">
               </div>
-          </div>
-          
-        
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__tag">LLM · Voice</span>
+                  <span>Recruitment</span>
                 </div>
+                <h3 class="project-card__title">AI Interview: Transforming the Future of Recruitment</h3>
+                <p class="project-card__summary">Generates interview questions from job descriptions and runs natural voice interviews with dynamic follow-up Q&amp;A.</p>
+                <ul class="project-card__points">
+                  <li>Unbiased, consistent evaluation and candidate ranking across multiple criteria.</li>
+                  <li>Web UI for job descriptions, candidate data and real-time interviewing.</li>
+                  <li>Transcripts and reports stored in one integrated system.</li>
+                </ul>
+                <ul class="project-card__stack">
+                  <li>LLMs</li><li>FastAPI</li><li>Svelte</li><li>TailwindCSS</li>
+                </ul>
+                <div class="project-card__actions">
+                  <a href="https://youtu.be/1ggh-2Fd3Hc" class="project-card__btn project-card__btn--primary" target="_blank" rel="noopener">
+                    <i class="uil uil-play"></i> Watch demo
+                  </a>
+                  <button type="button" class="project-card__btn pj__button" data-modal="modal-llm-1">
+                    Details <i class="uil uil-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
 
-            
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="./packages/images/LLM/2/2.png" alt="CV Screening results page" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__tag">LLM · VLM</span>
+                  <span>HR Tech</span>
+                </div>
+                <h3 class="project-card__title">CV Screening: Automating Candidate Evaluation</h3>
+                <p class="project-card__summary">Extracts and standardizes data from any CV format with LLMs and VLMs, then scores and ranks candidates on customizable criteria.</p>
+                <ul class="project-card__stack">
+                  <li>DeepSeek</li><li>LlamaIndex</li><li>FastAPI</li><li>Svelte</li>
+                </ul>
+                <div class="project-card__actions">
+                  <a href="https://youtu.be/ET7dJ9QvVis" class="project-card__btn project-card__btn--primary" target="_blank" rel="noopener">
+                    <i class="uil uil-play"></i> Demo
+                  </a>
+                  <button type="button" class="project-card__btn pj__button" data-modal="modal-llm-2">
+                    Details <i class="uil uil-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
 
-            <!-- add arrows-->
-            <div class="swiper-button-next">
-                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-            </div>
+            <article class="project-card">
+              <div class="project-card__media">
+                <img src="./packages/images/LLM/3/1.png" alt="Multimodal RAG chat interface" loading="lazy">
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__meta">
+                  <span class="project-card__tag">Multimodal RAG</span>
+                  <span>Document AI</span>
+                </div>
+                <h3 class="project-card__title">Multimodal RAG: Intelligent Document Understanding</h3>
+                <p class="project-card__summary">Extracts text, tables and images from complex PDFs and answers questions through multi-vector retrieval over text, tables and image captions.</p>
+                <ul class="project-card__stack">
+                  <li>LangChain</li><li>Ollama</li><li>FastAPI</li><li>Svelte</li>
+                </ul>
+                <div class="project-card__actions">
+                  <a href="https://youtu.be/qUarOhdrSwY" class="project-card__btn project-card__btn--primary" target="_blank" rel="noopener">
+                    <i class="uil uil-play"></i> Demo
+                  </a>
+                  <button type="button" class="project-card__btn pj__button" data-modal="modal-llm-3">
+                    Details <i class="uil uil-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
 
-            <div class="swiper-button-prev">
-                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-            </div>
-
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            
-        
-        </div>
-
-            </section>
+          </div>
+        </section>
 
 
         <!--==================== SLIDES ====================-->
@@ -2342,12 +2216,11 @@
       
    
     <!--==================== SWIPER JS ====================-->
-    <script src="./packages/js/swiper-bundle.min.js"></script>
 
 
 
     <!--==================== MAIN JS ====================-->
-    <script src="./packages/js/main.js?v=20261126"></script>
+    <script src="./packages/js/main.js?v=20261127"></script>
 </body>
 
 </html>
