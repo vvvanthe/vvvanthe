@@ -358,6 +358,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Captions array
   const captions = [
+    "IEEE ICDM 2026, Shenyang, China",
     "SIGGRAPH ASIA 2023, Sydney, Australia",
     "Automotive World 2024, Tokyo, Japan",
     "Speech in IPUT 2024, Tokyo, Japan",
