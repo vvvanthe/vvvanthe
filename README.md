@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Van The LE
 
-🎓 **Lecturer** at UEH.ISB Honours College  
+🎓 **Full-time Lecturer** at UEH University - UEH.ISB Honours College  
 🤖 **AI Research Engineer** at MoMo (M_Service)  
 🧭 **Mentor** in the AI Thực Chiến program (Vingroup & VinUni)  
 🧠 Ph.D. in AI and Robotics (Intelligent Mechatronics Engineering), Sejong University, South Korea  
