@@ -2,6 +2,7 @@
 
 🎓 **Lecturer** at UEH.ISB Honours College  
 🤖 **AI Research Engineer** at MoMo (M_Service)  
+🧭 **Mentor** in the AI Thực Chiến program (Vingroup & VinUni)  
 🧠 Ph.D. in AI and Robotics (Intelligent Mechatronics Engineering), Sejong University, South Korea  
 📍 Ho Chi Minh City, Vietnam  
 🔬 Passionate about Foundation Models, Deep Learning, Computer Vision, Image Processing, and Large Language Models
@@ -23,7 +24,7 @@
 ## 🛠️ Skills
 
 **Frameworks & Libraries:**  
-`PyTorch` `TensorFlow` `OpenCV`  `Scikit-learn` `MMDetection` `Ultralytic` `Ollama` `Langchain`
+`PyTorch` `TensorFlow` `OpenCV`  `Scikit-learn` `MMDetection` `Ultralytic` `Ollama` `Langchain` `AI Agents`
 
 **Languages:**  
 `Python` `Kotlin` `C/C++` `MATLAB` `C#` `Javascript` 

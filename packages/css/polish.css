@@ -343,6 +343,21 @@ body.dark-theme .contact__button {
 .qualification__data {
   padding-bottom: 1.75rem;
 }
+/* Alternate left/right by position, whatever cell order the markup uses,
+   so a new entry can be dropped in anywhere without re-flipping the rest. */
+.qualification__data > div:empty {
+  display: none;
+}
+.qualification__data > div {
+  grid-row: 1;
+  grid-column: 1;
+}
+.qualification__data > div:has(> .qualification__rounder) {
+  grid-column: 2;
+}
+.qualification__data:nth-child(even) > div:not(:has(> .qualification__rounder)) {
+  grid-column: 3;
+}
 
 /* ---------- Skills ---------- */
 .skills__content {
