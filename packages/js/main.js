@@ -583,17 +583,42 @@ function renderTextCanvas(id, encodedText) {
 }
 
 // Base64-encoded info
-renderTextCanvas("phoneCanvas",  atob("KCs4MikgMTAyMTU1NjY2OQ==")); // phone
+renderTextCanvas("phoneCanvas",  atob("Kzg0IDMyIDcwNSA2NjY5")); // phone
 renderTextCanvas("emailCanvas", atob("dmFudGhlLmxlOTZAZ21haWwuY29t")); // email
-renderTextCanvas("locationCanvas", "Seoul, South Korea"); // Seoul, South Korea
+renderTextCanvas("locationCanvas", "TP HCM, Vietnam"); // Seoul, South Korea
 
 // Re-render if theme changes
 const observer = new MutationObserver(() => {
-  renderTextCanvas("phoneCanvas", atob("KCs4MikgMTAyMTU1NjY2OQ=="));
+  renderTextCanvas("phoneCanvas", atob("Kzg0IDMyIDcwNSA2NjY5"));
   renderTextCanvas("emailCanvas", atob("dmFudGhlLmxlOTZAZ21haWwuY29t"));
-  renderTextCanvas("locationCanvas",  "Seoul, South Korea");
+  renderTextCanvas("locationCanvas",  "TP HCM, Vietnam");
 });
 observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
 
 });
 
+
+/*==================== SCROLL REVEAL ====================*/
+(() => {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add("is-visible");
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
+
+  const add = (selector, fadeOnly) =>
+    document.querySelectorAll(selector).forEach((el) => {
+      // stagger siblings a little; cap so long lists don't lag
+      const i = [...el.parentElement.children].indexOf(el);
+      el.style.setProperty("--reveal-delay", Math.min(i, 5) * 70 + "ms");
+      el.classList.add("reveal");
+      if (fadeOnly) el.classList.add("reveal--fade");
+      io.observe(el);
+    });
+
+  add(".section__title, .section__subtitle, .home__data, .home__img, .about__img, .about__data, .publications__list .publications__list li, .portfolio__container, .slideshowContainer, .contact__container > *");
+  // these hold position:fixed modals: fade only, never transform
+  add(".qualification__data, .skills__content", true);
+})();

@@ -41,7 +41,7 @@ Check out some of my recent research projects: [portfolio](https://vvvanthe.gith
 
 ## 📄 Selected Publications
 
-- **T. V. Le** with co-authors at MoMo, “FoMo: Language-Aligned Learning for Zero-Shot and Few-Shot Tabular Inference”, IEEE ICDM, 2026.
+- **T. V. Le**, Trung Nghia Duong, Quang Dan Tran, Tien Thinh Nguyen, Nguyen Tu Duc Ngo, Thi Ha Yen Tang, [“FoMo: Language-Aligned Learning for Zero-Shot and Few-Shot Tabular Inference”](https://github.com/MoMo-FoMo/FoMo), IEEE ICDM, 2026.
 - L. T. Le, Y. Kang, J. D. Joshua, **T. V. Le**, T. Teranikar, J. Lee, J. Y. Lee, “Tri-UNetX: Tri-plane UNet with xLSTM for 3D Cell Segmentation”, Image and Vision Computing, 2026.
 - Y. Kang, J. Park, **T. V. Le**, J. Y. Lee, “MFLGBN: Multiscale Fusion Based Local-Global Bridging Network for Lightweight Image Denoising”, IEEE Access, 2026.
 - **T. V. Le**, et al., “Surface Defect Detection Using Distributed Features”, Engineering Applications of Artificial Intelligence, 2025.

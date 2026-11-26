@@ -12,6 +12,7 @@
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="./packages/css/styles2.css">
+        <link rel="stylesheet" href="./packages/css/polish.css">
 
         
 
@@ -22,7 +23,8 @@
 
 
 
-        <title>Van The LE</title>
+        <meta name="description" content="Van The Le — Lecturer at UEH.ISB Honours College and AI Research Engineer at MoMo. Research in foundation models, computer vision and LLMs.">
+        <title>Van The Le | Lecturer &amp; AI Research Engineer</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
@@ -134,7 +136,7 @@
                         </div>
 
                         <div class="home__data">
-                            <h1 class="home__title">Hi, I'am The</h1>
+                            <h1 class="home__title">Hi, I'm The</h1>
                             <h3 class="home__subtitle">Lecturer &amp; AI Research Engineer</h3>
                             <p class="home__description">
                                 I am a Lecturer at 
@@ -173,15 +175,15 @@
                         <div class="about__info">
                             <div>
                                 <span class="about__info-title">07+</span>
-                                <span class="about__info-name">⏳Years<br>experience</span>
+                                <span class="about__info-name">Years<br>experience</span>
                             </div>
                             <div>
                                 <span class="about__info-title">15+</span>
-                                <span class="about__info-name">📚International<br>publications</span>
+                                <span class="about__info-name">International<br>publications</span>
                             </div>
                             <div>
                                 <span class="about__info-title">04+</span>
-                                <span class="about__info-name">🏢Organizations<br>worked</span>
+                                <span class="about__info-name">Organizations<br>worked</span>
                             </div>
                         </div>
 
@@ -994,8 +996,8 @@
             <div class="container">
               <ul class="publications__list">
                 <ul class="publications__list">
-                    <li><strong>T. V. Le</strong> with co-authors at MoMo, 
-                      “FoMo: Language-Aligned Learning for Zero-Shot and Few-Shot Tabular Inference”, 
+                    <li><strong>T. V. Le</strong>, Trung Nghia Duong, Quang Dan Tran, Tien Thinh Nguyen, Nguyen Tu Duc Ngo, Thi Ha Yen Tang, 
+                      <a href="https://github.com/MoMo-FoMo/FoMo" target="_blank">“FoMo: Language-Aligned Learning for Zero-Shot and Few-Shot Tabular Inference”</a>, 
                       <em>IEEE International Conference on Data Mining (ICDM)</em>, 2026.
                     </li>
 
@@ -1217,11 +1219,37 @@
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="cvproject">
 
-            <h2 class="section__title">CV Projects</h2>
+            <h2 class="section__title">Research Projects</h2>
             <span class="section__subtitle">Most Recent Works</span>
 
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
+        <!--==================== FoMo ====================-->
+        <div class="portfolio__content grid swiper-slide">
+          <img src="./packages/images/FoMo/fig.png" alt="FoMo overview: a tabular encoder and a text encoder aligned into one embedding space" class="portfolio__img">
+
+          <div class="portfolio_">
+              <h3 class="portfolio__title"> <strong>FoMo:</strong> Language-Aligned Learning for Zero-Shot and Few-Shot Tabular Inference (IEEE ICDM 2026) </h3>
+
+              <ul class="portfolio__description-list">
+                  <li>🔗 Reformulates tabular learning as semantic matching: a tabular encoder and a text encoder are aligned contrastively using LLM-written row descriptions.</li>
+                  <li>🎯 A new prediction task is just a piece of text, enabling zero-shot inference with no task-specific retraining and no LLM at inference time.</li>
+                  <li>⚖️ FoMo-Pairwise turns language-based ranking signals into pairwise objectives for few-shot classification and regression on frozen embeddings.</li>
+                  <li>🚀 On LendingClub, FoMo with zero labels beats every baseline given 32 labelled examples per class (AUC 0.638 vs 0.624 on loan default).</li>
+              </ul>
+              <br>
+              <strong>Tech stack:</strong> PyTorch, Contrastive Learning (InfoNCE), Sentence Transformers, Qwen3-8B
+
+              <h3 class="portfolio__title"></h3>
+
+              <div class="portfolio__buttons">
+                <a href="https://github.com/MoMo-FoMo/FoMo" class="button button--flex pj__button" target="_blank" rel="noopener">
+                  Code on GitHub <i class="uil uil-github-alt button__icon"></i>
+                </a>
+              </div>
+          </div>
+      </div>
+
         <!--==================== PORTFOLIO 1 ====================-->
 
         
