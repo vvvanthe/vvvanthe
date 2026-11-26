@@ -278,6 +278,8 @@ pjModalBtns.forEach((btn) => {
     const modal = document.getElementById(modalId);
     if (modal) {
       modal.classList.remove("hidden");
+      modal.querySelector(".modal-content").scrollTop = 0;
+      document.body.classList.add("no-scroll");
     } else {
       console.warn(`Modal with ID "${modalId}" not found.`);
     }
@@ -286,8 +288,20 @@ pjModalBtns.forEach((btn) => {
 
 pjModalCloses.forEach((closeBtn) => {
   closeBtn.addEventListener("click", () => {
-    closeBtn.closest(".modal").classList.add("hidden");
+    closeProjectModal(closeBtn.closest(".modal"));
   });
+});
+
+function closeProjectModal(modal) {
+  modal.classList.add("hidden");
+  document.body.classList.remove("no-scroll");
+}
+// click on the dimmed backdrop or press Esc to close
+document.querySelectorAll(".modal").forEach((m) =>
+  m.addEventListener("click", (e) => e.target === m && closeProjectModal(m))
+);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") document.querySelectorAll(".modal:not(.hidden)").forEach(closeProjectModal);
 });
 
 // Optional: click outside modal-content to close

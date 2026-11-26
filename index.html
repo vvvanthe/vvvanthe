@@ -10,8 +10,8 @@
         <!--==================== SWIPER CSS ====================-->
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="./packages/css/styles2.css?v=20261127">
-        <link rel="stylesheet" href="./packages/css/polish.css?v=20261127">
+        <link rel="stylesheet" href="./packages/css/styles2.css?v=20261128">
+        <link rel="stylesheet" href="./packages/css/polish.css?v=20261128">
 
         
 
@@ -1675,7 +1675,7 @@
                 A lightweight yet powerful surface defect detection network that introduces Distributed Convolution (DConv) and Distributed Depthwise Convolution (DDWConv) to efficiently capture both local and long-range features, while using Spatial Attention Gate (SAG) for feature fusion.
               </p>
           
-              <h4>📌 Architecture Overview</h4>
+              <h4>Architecture Overview</h4>
               <div class="portfolio__modal-image">
                 <img src="./packages/images/CV/1/1.jpg" alt="DF-SDD Architecture Diagram">
                 <p class="portfolio__modal-caption">Overview of DF-SDD Network</p>
@@ -1687,46 +1687,46 @@
                 <p class="portfolio__modal-caption">DConv and DWConv</p>
               </div>
           
-              <h4>🧩 Motivation</h4>
+              <h4>Motivation</h4>
               <p>
                 Traditional surface defect detectors rely heavily on standard convolution, limiting their ability to handle variations in defect texture and scale. DF-SDD aims to overcome these challenges with a more flexible and efficient design suited for real-world industrial applications.
               </p>
           
-              <h4>🚀 Project Contributions</h4>
+              <h4>Project Contributions</h4>
               <ul class="portfolio__modal-list">
-                <li>⚙️ Introduced DConv and DDWConv for larger receptive fields at low cost.</li>
-                <li>🧠 Designed DFEB block to capture both local and global features in parallel.</li>
-                <li>🌐 Used Spatial Attention Gate (SAG) for multi-level feature fusion across scales.</li>
-                <li>📉 Achieved state-of-the-art results with only 0.85M parameters and 6.2 GFLOPs.</li>
+                <li>Introduced DConv and DDWConv for larger receptive fields at low cost.</li>
+                <li>Designed DFEB block to capture both local and global features in parallel.</li>
+                <li>Used Spatial Attention Gate (SAG) for multi-level feature fusion across scales.</li>
+                <li>Achieved state-of-the-art results with only 0.85M parameters and 6.2 GFLOPs.</li>
               </ul>
           
-              <h4>🛠️ Key Features</h4>
+              <h4>Key Features</h4>
               <ul class="portfolio__modal-list">
-                <li>🔍 Accurate detection of small and large defects (scratches, pits, inclusions).</li>
-                <li>📊 Multi-scale feature integration with dual-path fusion (top-down & bottom-up).</li>
-                <li>💡 Ablation study confirms importance of SAG, DML, LRB, and LEB modules.</li>
-                <li>📈 Highest mAP on NEU-DET (0.894) and GC10-DET (0.725).</li>
+                <li>Accurate detection of small and large defects (scratches, pits, inclusions).</li>
+                <li>Multi-scale feature integration with dual-path fusion (top-down & bottom-up).</li>
+                <li>Ablation study confirms importance of SAG, DML, LRB, and LEB modules.</li>
+                <li>Highest mAP on NEU-DET (0.894) and GC10-DET (0.725).</li>
               </ul>
           
-              <h4>🔬 System Design</h4>
+              <h4>System Design</h4>
               <p>
                 The DF-SDD network consists of three main stages: feature extraction (DFEB), feature fusion (SAG-based), and prediction. It uses a decoupled head for final bounding box prediction across three scales.
               </p>
           
-              <h4>🧪 Technologies Used</h4>
+              <h4>Technologies Used</h4>
               <ul class="portfolio__modal-list">
                 <li><strong>Framework:</strong> PyTorch</li>
                 <li><strong>Datasets:</strong> NEU-DET, GC10-DET, CarDD</li>
                 <li><strong>Programming:</strong> Python</li>
               </ul>
           
-              <h4>📊 Evaluation Results</h4>
+              <h4>Evaluation Results</h4>
               <div class="portfolio__modal-image">
                 <img src="./packages/images/CV/1/2.jpg" alt="DF-SDD Evaluation Results">
                 <!-- <p class="portfolio__modal-caption">Performance comparison on NEU-DET and GC10-DET</p> -->
               </div>
           
-              <h4>📂 Published Paper</h4>
+              <h4>Published Paper</h4>
               <a href="https://doi.org/10.1016/j.engappai.2025.110655"
                  target="_blank"
                  class="button button--flex button--small portfolio__button">
@@ -1748,39 +1748,39 @@
                 A novel deep learning framework that detects and refines specular regions in 360° video, improving immersive video quality for multimedia applications such as VR and AR.
               </p>
           
-              <h4>📌 System Overview Diagram</h4>
+              <h4>System Overview Diagram</h4>
               <div class="portfolio__modal-image">
                 <img src="./packages/images/CV/2/1.jpg" alt="Specular Detection Architecture">
                 <p class="portfolio__modal-caption">VAUnet Architecture.</p>
               </div>
           
-              <h4>🧩 Background</h4>
+              <h4>Background</h4>
               <p>
                 Specular highlights in immersive 360° content reduce visual quality and realism. Existing solutions often treat them as noise, ignoring their physical and perceptual importance. This project addresses this challenge by detecting specular regions and applying refined rendering to preserve or remove them based on context.
               </p>
           
-              <h4>🚀 Project Contributions</h4>
+              <h4>Project Contributions</h4>
               <ul class="portfolio__modal-list">
-                <li>📌 Designed VAUnet: high-performance variational attention U-network for specular highlight detection.</li>
-                <li>🔍 Hybrid loss function including combined structural loss (Dice + Cross-Entropy) with KL divergence to preserve fine boundary details and semantic coherence.</li>
-                <li>🎨 Integrated detected masks into MPEG-I based rendering pipeline to reconstruct or suppress specular highlights contextually.</li>
-                <li>📈 Demonstrated robustness across synthetic and real 360° datasets .</li>
+                <li>Designed VAUnet: high-performance variational attention U-network for specular highlight detection.</li>
+                <li>Hybrid loss function including combined structural loss (Dice + Cross-Entropy) with KL divergence to preserve fine boundary details and semantic coherence.</li>
+                <li>Integrated detected masks into MPEG-I based rendering pipeline to reconstruct or suppress specular highlights contextually.</li>
+                <li>Demonstrated robustness across synthetic and real 360° datasets .</li>
               </ul>
           
-              <h4>🛠️ Key Features</h4>
+              <h4>Key Features</h4>
               <ul class="portfolio__modal-list">
-                <li>🧠 Mapping the input image into a standard normal distribution to accurately interpolate the output.</li>
-                <li>🧩 Attention fusion module for context-aware feature aggregation.</li>
-                <!-- <li>📦 Multi-scale decoding for fine-grained boundary preservation.</li> -->
-                <li>🎯 Integration with MPEG-I rendering for higher subjective rendering quality..</li>
+                <li>Mapping the input image into a standard normal distribution to accurately interpolate the output.</li>
+                <li>Attention fusion module for context-aware feature aggregation.</li>
+                <!-- <li>Multi-scale decoding for fine-grained boundary preservation.</li> -->
+                <li>Integration with MPEG-I rendering for higher subjective rendering quality..</li>
               </ul>
           
-              <h4>🔬 System Design</h4>
+              <h4>System Design</h4>
               <p>
                 The network follows an encoder-decoder structure with a standard normal distribution to encode input image and attention blocks. It uses U-net as backbone and outputs binary masks to guide rendering. The rendering system enhances specular realism or suppresses unwanted artifacts in immersive 360° content.
               </p>
           
-              <h4>🧪 Technologies Used</h4>
+              <h4>Technologies Used</h4>
               <ul class="portfolio__modal-list">
                 <li><strong>DL Framework:</strong> PyTorch</li>
                 <li><strong>Compression:</strong> MPEG-I (C++)</li>
@@ -1789,13 +1789,13 @@
                 <li><strong>Application:</strong> Immersive multimedia rendering pipeline</li>
               </ul>
           
-              <h4>📊 Evaluation Results</h4>
+              <h4>Evaluation Results</h4>
               <div class="portfolio__modal-image">
                 <img src="./packages/images/CV/2/2.jpg"  alt="Specular Detection Results">
                 <!-- <p class="portfolio__modal-caption">Comparison of before/after specular rendering.</p> -->
               </div>
           
-              <h4>📂 Published Paper</h4>
+              <h4>Published Paper</h4>
               <a href="https://doi.org/10.1109/MMUL.2023.3262195" 
                  target="_blank" 
                  class="button button--flex button--small portfolio__button">
@@ -1817,7 +1817,7 @@
                 Combines VAUnet for precise detection with QformerSHR, a Quaternion transformer-based removal network.
               </p>
           
-              <h4>📌 Architecture Overview</h4>
+              <h4>Architecture Overview</h4>
               <div class="portfolio__modal-image">
                 <img src="./packages/images/CV/3/2.png" alt="SHDRN Architecture Diagram">
                 <p class="portfolio__modal-caption">Two-stage SHDRN framework: VAUnet + QformerSHR</p>
@@ -1828,38 +1828,38 @@
                 <p class="portfolio__modal-caption">DSQConv and Quaternion Multi-head attention</p>
               </div>
           
-              <h4>🧩 Motivation</h4>
+              <h4>Motivation</h4>
               <p>
                 Specular highlights hinder many computer vision tasks by obscuring texture and shape information.
                 Traditional CNN-based methods fail to capture global context effectively and ignore RGB structural correlations.
                 SHDRN addresses these issues by combining detection and removal into a unified, robust framework.
               </p>
           
-              <h4>🚀 Project Contributions</h4>
+              <h4>Project Contributions</h4>
               <ul class="portfolio__modal-list">
-                <li>🎯 Proposed a two-stage SHDRN pipeline for specular highlight removal.</li>
-                <li>🧠 Developed QformerSHR using Quaternion representation for RGB structural preservation.</li>
-                <li>⚡ Introduced DSQConv for efficient computation with enhanced spatial correlation.</li>
-                <li>🌍 Integrated QTB to capture long-range dependencies for better restoration.</li>
-                <li>📈 Achieved superior PSNR and SSIM compared to state-of-the-art methods.</li>
+                <li>Proposed a two-stage SHDRN pipeline for specular highlight removal.</li>
+                <li>Developed QformerSHR using Quaternion representation for RGB structural preservation.</li>
+                <li>Introduced DSQConv for efficient computation with enhanced spatial correlation.</li>
+                <li>Integrated QTB to capture long-range dependencies for better restoration.</li>
+                <li>Achieved superior PSNR and SSIM compared to state-of-the-art methods.</li>
               </ul>
           
-              <h4>🛠️ Key Features</h4>
+              <h4>Key Features</h4>
               <ul class="portfolio__modal-list">
-                <li>🔍 Accurate specular mask generation with VAUnet.</li>
-                <li>💡 Transformer-based highlight removal for global context learning.</li>
-                <li>🌀 Quaternion convolution to retain RGB inter-channel correlations.</li>
-                <li>📊 Hybrid training strategy for robust and efficient learning.</li>
+                <li>Accurate specular mask generation with VAUnet.</li>
+                <li>Transformer-based highlight removal for global context learning.</li>
+                <li>Quaternion convolution to retain RGB inter-channel correlations.</li>
+                <li>Hybrid training strategy for robust and efficient learning.</li>
               </ul>
           
-              <h4>🔬 System Design</h4>
+              <h4>System Design</h4>
               <p>
                 SHDRN first uses VAUnet to detect and localize specular highlights, generating binary masks. 
                 These masks, along with the original image, are fed into QformerSHR, which performs highlight removal using 
                 DSQConv and QTB modules. The hybrid training strategy jointly optimizes both stages for better synergy.
               </p>
           
-              <h4>🧪 Technologies Used</h4>
+              <h4>Technologies Used</h4>
               <ul class="portfolio__modal-list">
                 <li><strong>Framework:</strong> PyTorch</li>
                 <li><strong>Programming:</strong> Python</li>
@@ -1867,14 +1867,14 @@
                 <li><strong>Datasets:</strong> Multiple natural and text-image datasets with specular highlights</li>
               </ul>
           
-              <h4>📊 Evaluation Results</h4>
+              <h4>Evaluation Results</h4>
               <div class="portfolio__modal-image">
                 <img src="./packages/images/CV/3/4.png" alt="SHDRN Evaluation Results">
                 <p class="portfolio__modal-caption">Performance comparison on natural image datasets</p>
               </div>
           
           
-              <h4>📂 Proposal Slides</h4>
+              <h4>Proposal Slides</h4>
                 <a href="https://drive.google.com/file/d/1wN31NO67Z7c8hoKPbfkv5TXLGlJDS78s/view?usp=sharing" 
                     target="_blank" 
                     class="button button--flex button--small portfolio__button">
@@ -1896,34 +1896,34 @@
                 A computationally efficient deep learning network for enhancing brain MRI resolution, designed with 3D convolution to handle volumetric medical data. The network integrates extraction, compression, and reconstruction parts with skip connections for optimal performance while maintaining low complexity for real-time applications.
               </p>
           
-              <h4>📌 Architecture Overview</h4>
+              <h4>Architecture Overview</h4>
               <div class="portfolio__modal-image">
                 <img src="./packages/images/CV/4/2.png" alt="MRI SR Architecture Diagram">
                 <p class="portfolio__modal-caption">Overview of the lightweight 3D CNN architecture</p>
               </div>
           
-              <h4>🧩 Motivation</h4>
+              <h4>Motivation</h4>
               <p>
                 High-resolution brain MRI provides exceptional anatomical detail but is often limited by long scan times, high magnetic field requirements, and low SNR. Conventional super-resolution networks are computationally heavy and unsuitable for integration into MR scanners. This project aims to design an efficient, high-quality MRI SR network that meets real-time constraints.
               </p>
           
-              <h4>🚀 Project Contributions</h4>
+              <h4>Project Contributions</h4>
               <ul class="portfolio__modal-list">
-                <li>⚙️ Designed a lightweight 3D CNN tailored for volumetric brain MRI data.</li>
-                <li>🔗 Integrated skip connections between extraction, compression, and reconstruction modules for better gradient flow.</li>
-                <li>📉 Reduced computational cost using 1×1×1 convolution in the compression stage.</li>
-                <li>📊 Achieved high PSNR and SSIM with significantly fewer parameters than conventional networks.</li>
+                <li>Designed a lightweight 3D CNN tailored for volumetric brain MRI data.</li>
+                <li>Integrated skip connections between extraction, compression, and reconstruction modules for better gradient flow.</li>
+                <li>Reduced computational cost using 1×1×1 convolution in the compression stage.</li>
+                <li>Achieved high PSNR and SSIM with significantly fewer parameters than conventional networks.</li>
               </ul>
           
-              <h4>🛠️ Key Features</h4>
+              <h4>Key Features</h4>
               <ul class="portfolio__modal-list">
-                <li>🧠 Handles volumetric MRI data directly with 3D convolutions.</li>
-                <li>💡 Efficient network design suitable for integration into MR scanners.</li>
-                <li>🖼️ Produces clearer anatomical details without over-smoothing.</li>
-                <li>⚡ Fast inference speed for clinical applications.</li>
+                <li>Handles volumetric MRI data directly with 3D convolutions.</li>
+                <li>Efficient network design suitable for integration into MR scanners.</li>
+                <li>Produces clearer anatomical details without over-smoothing.</li>
+                <li>Fast inference speed for clinical applications.</li>
               </ul>
           
-              <h4>🔬 System Design</h4>
+              <h4>System Design</h4>
               <p>
                 The network consists of:
                 <ul>
@@ -1934,7 +1934,7 @@
                 Skip connections are employed to preserve spatial information across stages.
               </p>
           
-              <h4>🧪 Technologies Used</h4>
+              <h4>Technologies Used</h4>
               <ul class="portfolio__modal-list">
                 <li><strong>Framework:</strong> PyTorch</li>
                 <li><strong>Programming:</strong> Python</li>
@@ -1942,7 +1942,7 @@
                 <li><strong>Model Type:</strong> 3D Convolutional Neural Network</li>
               </ul>
           
-              <h4>📊 Evaluation Results</h4>
+              <h4>Evaluation Results</h4>
               <div class="portfolio__modal-image">
                 <img src="./packages/images/CV/4/3.png" alt="MRI SR Results">
                 <p class="portfolio__modal-caption">Comparison of proposed network with baseline SR methods</p>
@@ -1950,7 +1950,7 @@
           
               
           
-              <h4>📂 Published Paper</h4>
+              <h4>Published Paper</h4>
               <a href="https://link.springer.com/article/10.1007/s11042-023-15969-8" target="_blank" class="button button--flex button--small portfolio__button">
                 View Publication
                 <i class="uil uil-file-download button__icon"></i>
@@ -1977,41 +1977,41 @@
             A smart interview solution that leverages LLMs, voice AI, and deep learning to automate, evaluate, and streamline candidate screening and assessment.
           </p>
 
-          <h4>📌 System Overview Diagram</h4>
+          <h4>System Overview Diagram</h4>
             <div class="portfolio__modal-image">
             <img src="./packages/images/LLM/1/diagram.jpg" alt="AI Interview System Diagram">
             <!-- <p class="portfolio__modal-caption">Diagram of interview flow.</p> -->
             </div>
 
 
-          <h4>🧩 Background</h4>
+          <h4>Background</h4>
           <p>
             Traditional recruitment requires significant human effort in CV screening and conducting interviews. It is time-consuming, subjective, and difficult to scale. This project proposes a fully automated AI interview platform that simulates HR interactions using advanced language and speech models.
           </p>
       
-          <h4>🚀 Project Goals</h4>
+          <h4>Project Goals</h4>
           <ul class="portfolio__modal-list">
             <li>Replace initial human interviews with a fully autonomous voice-based system.</li>
             <li>Provide consistent and unbiased candidate evaluation.</li>
             <li>Enable one-click integration for HR teams and recruiters.</li>
           </ul>
       
-          <h4>🛠️ Key Features</h4>
+          <h4>Key Features</h4>
           <ul class="portfolio__modal-list">
-            <li>📄 JD-based question generation.</li>
-            <li>🗣️ Natural two-way interview using Google TTS/STT APIs and LLMs.</li>
-            <li>🎯 Intelligent question branching based on candidate answers.</li>
-            <li>📊 Automated scoring and evaluation reports.</li>
-            <li>🌐 Web UI for data management,job description input,managing data, and real-time interviewing.</li>
-            <li>🗃️ Candidate management dashboard with full logs and transcripts.</li>
+            <li>JD-based question generation.</li>
+            <li>Natural two-way interview using Google TTS/STT APIs and LLMs.</li>
+            <li>Intelligent question branching based on candidate answers.</li>
+            <li>Automated scoring and evaluation reports.</li>
+            <li>Web UI for data management,job description input,managing data, and real-time interviewing.</li>
+            <li>Candidate management dashboard with full logs and transcripts.</li>
           </ul>
       
-          <h4>🔬 System Architecture</h4>
+          <h4>System Architecture</h4>
           <p>
             The platform includes a frontend interview interface (Svelte), a backend logic and scoring engine (FastAPI + Python), speech services (Google APIs), and a backend database for storing candidate sessions and evaluations. LLMs (e.g., GPT) are used for both question generation and answer analysis.
           </p>
       
-          <h4>🧪 Technologies Used</h4>
+          <h4>Technologies Used</h4>
           <ul class="portfolio__modal-list">
             <li><strong>Frontend:</strong> Svelte, TailwindCSS</li>
             <li><strong>Backend:</strong> FastAPI, Python</li>
@@ -2019,7 +2019,7 @@
             <li><strong>Speech:</strong> Google TTS, Google STT</li>
           </ul>
       
-          <h4>📊 Expected Impact</h4>
+          <h4>Expected Impact</h4>
           <ul class="portfolio__modal-list">
             <li>Reduce HR workload by 70% for first-round interviews.</li>
             <li>Improve candidate fairness by eliminating bias in early screening.</li>
@@ -2027,14 +2027,14 @@
           </ul>
           
 
-          <h4>📋 Evaluation Result Sample</h4>
+          <h4>Evaluation Result Sample</h4>
           <div class="portfolio__modal-image">
           <img src="./packages/images/LLM/1/2.png" alt="AI Interview System Diagram">
           <!-- <p class="portfolio__modal-caption">Evaluation Result Sample.</p> -->
           </div>
 
             
-          <h4>📂 Proposal Slides</h4>
+          <h4>Proposal Slides</h4>
           <a href="https://docs.google.com/presentation/d/1Vtcj3U6o0KIVwOLa833ukLaN0kFxHJF7/edit?usp=sharing&ouid=103931757335348659010&rtpof=true&sd=true" 
              target="_blank" 
              class="button button--flex button--small portfolio__button">
@@ -2058,58 +2058,58 @@
             An automated candidate evaluation system that extracts, standardizes, and scores CV data from diverse formats using advanced language and vision models.
           </p>
       
-          <h4>📌 System Overview Diagram</h4>
+          <h4>System Overview Diagram</h4>
           <div class="portfolio__modal-image">
             <img src="./packages/images/LLM/2/1.png" alt="CV Screening System Diagram">
             <!-- <p class="portfolio__modal-caption">Diagram illustrating CV data extraction and scoring workflow.</p> -->
           </div>
       
-          <h4>🧩 Background</h4>
+          <h4>Background</h4>
           <p>
             Manual CV screening is time-consuming and prone to inconsistency and bias. This project automates the process by leveraging Large Language Models (LLMs) and Visual Language Models (VLMs) to accurately extract and analyze candidate information across multiple CV formats.
           </p>
       
-          <h4>🚀 Project Goals</h4>
+          <h4>Project Goals</h4>
           <ul class="portfolio__modal-list">
             <li>Automate information extraction from varied CV formats into a unified JSON structure.</li>
             <li>Score and rank candidates fairly based on customizable criteria including education, skills, experience, and roles.</li>
             <li>Provide an intuitive web interface for uploading CVs and job descriptions and viewing evaluation results.</li>
           </ul>
       
-          <h4>🛠️ Key Features</h4>
+          <h4>Key Features</h4>
           <ul class="portfolio__modal-list">
-            <li>📄 Extraction of text and tables using models like DeepSeek, Owen, OpenAI API, LlamaIndex, and OllamaOCR.</li>
-            <li>📊 Candidate scoring based on defined evaluation criteria with clear score descriptors.</li>
-            <li>🌐 Web UI for data management, CV uploading, job description input, and real-time scoring.</li>
-            <li>🗃️ Standardized JSON output for easy integration and management.</li>
+            <li>Extraction of text and tables using models like DeepSeek, Owen, OpenAI API, LlamaIndex, and OllamaOCR.</li>
+            <li>Candidate scoring based on defined evaluation criteria with clear score descriptors.</li>
+            <li>Web UI for data management, CV uploading, job description input, and real-time scoring.</li>
+            <li>Standardized JSON output for easy integration and management.</li>
           </ul>
       
-          <h4>🔬 System Architecture</h4>
+          <h4>System Architecture</h4>
           <p>
             The system integrates a frontend built with Svelte and TailwindCSS, a FastAPI backend for processing and scoring, and uses LLMs/VLMs for intelligent data extraction and evaluation.
           </p>
       
-          <h4>🧪 Technologies Used</h4>
+          <h4>Technologies Used</h4>
           <ul class="portfolio__modal-list">
             <li><strong>Frontend:</strong> Svelte, TailwindCSS</li>
             <li><strong>Backend:</strong> FastAPI, Python</li>
             <li><strong>AI Modules:</strong> DeepSeek, Owen, OpenAI API, LlamaIndex, OllamaOCR</li>
           </ul>
       
-          <h4>📊 Expected Impact</h4>
+          <h4>Expected Impact</h4>
           <ul class="portfolio__modal-list">
             <li>Significantly reduce manual HR workload in CV screening.</li>
             <li>Increase consistency and fairness in candidate evaluation.</li>
             <li>Enable scalable recruitment for large applicant volumes.</li>
           </ul>
       
-          <h4>📋 Evaluation Result Sample</h4>
+          <h4>Evaluation Result Sample</h4>
           <div class="portfolio__modal-image">
             <img src="./packages/images/LLM/2/3.png" alt="CV Screening Evaluation Result Sample">
             <!-- <p class="portfolio__modal-caption">Sample candidate scoring and ranking.</p> -->
           </div>
       
-          <!-- <h4>📂 Proposal Slides</h4>
+          <!-- <h4>Proposal Slides</h4>
           <a href="https://docs.google.com/presentation/d/your-proposal-link" 
              target="_blank" 
              class="button button--flex button--small portfolio__button">
@@ -2131,38 +2131,38 @@
                 A multimodal retrieval-augmented generation (RAG) system that integrates vision-language models (VLMs) and large language models (LLMs) to extract, summarize, and answer queries on complex documents containing text, tables, and images.
             </p>
     
-            <h4>📌 System Overview Diagram</h4>
+            <h4>System Overview Diagram</h4>
             <div class="portfolio__modal-image">
                 <img src="./packages/images/LLM/3/2.png" alt="Multimodal RAG System Diagram">
             </div>
     
-            <h4>🧩 Background</h4>
+            <h4>Background</h4>
             <p>
                 Handling complex documents—such as admission guides, reports, or research papers—is challenging due to mixed layouts, tables, and images. Existing PDF extraction tools often fail to parse such content accurately. This motivated the development of a multimodal RAG system that leverages VLMs for images and LLMs for text, enabling accurate retrieval and question answering.
             </p>
     
-            <h4>🚀 Project Goals</h4>
+            <h4>Project Goals</h4>
             <ul class="portfolio__modal-list">
                 <li>Enable robust extraction and summarization of text, tables, and images from complex documents.</li>
                 <li>Provide accurate answers to user queries by combining content from multiple modalities.</li>
                 <li>Build an interactive web interface for document uploading, extraction visualization, and chat-based querying.</li>
             </ul>
     
-            <h4>🛠️ Key Features</h4>
+            <h4>Key Features</h4>
             <ul class="portfolio__modal-list">
-              <li>📄 Automatic extraction and summarization of text and tables using LLMs.</li>
-              <li>🖼️ Uses VLMs to filter out decorative or irrelevant images and retain only content-relevant visuals, generating accurate captions for figures, charts, and diagrams.</li>
-              <li>🗣️ Context-aware question answering using LLMs.</li>
-              <li>🔍 MultiVectorRetriever for efficient retrieval across text, table, and image embeddings.</li>
-              <li>🌐 Web UI for uploading PDFs and querying documents interactively.</li>
+              <li>Automatic extraction and summarization of text and tables using LLMs.</li>
+              <li>Uses VLMs to filter out decorative or irrelevant images and retain only content-relevant visuals, generating accurate captions for figures, charts, and diagrams.</li>
+              <li>Context-aware question answering using LLMs.</li>
+              <li>MultiVectorRetriever for efficient retrieval across text, table, and image embeddings.</li>
+              <li>Web UI for uploading PDFs and querying documents interactively.</li>
           </ul>
     
-            <h4>🔬 System Architecture</h4>
+            <h4>System Architecture</h4>
             <p>
                 The system consists of a frontend interface (Svelte + TailwindCSS) for PDF upload, visualization, and chat interaction, and a backend (FastAPI + Python) handling extraction, embedding, and retrieval. MultiVectorRetriever searches across multiple embeddings, while LLMs generate summaries and answers. VLMs process images to produce meaningful captions.
             </p>
     
-            <h4>🧪 Technologies Used</h4>
+            <h4>Technologies Used</h4>
             <ul class="portfolio__modal-list">
                 <li><strong>Frontend:</strong> Svelte, TailwindCSS</li>
                 <li><strong>Backend:</strong> FastAPI, LangChain, Ollama</li>
@@ -2170,14 +2170,14 @@
                 <li><strong>Retrieval:</strong> MultiVectorRetriever, Vector Database</li>
             </ul>
     
-            <h4>📊 Expected Impact</h4>
+            <h4>Expected Impact</h4>
             <ul class="portfolio__modal-list">
                 <li>Enable users to quickly extract and understand complex documents.</li>
                 <li>Reduce time spent manually parsing tables, figures, and long text.</li>
                 <li>Provide accurate, context-aware answers from multimodal sources.</li>
             </ul>
     
-            <h4>📋 Result Sample</h4>
+            <h4>Result Sample</h4>
             <div class="portfolio__modal-image">
                 <img src="./packages/images/LLM/3/3.png" alt="Extraction Result Sample">
             </div>
@@ -2220,7 +2220,7 @@
 
 
     <!--==================== MAIN JS ====================-->
-    <script src="./packages/js/main.js?v=20261127"></script>
+    <script src="./packages/js/main.js?v=20261128"></script>
 </body>
 
 </html>
